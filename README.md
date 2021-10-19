@@ -288,7 +288,42 @@ class son(brother)
 
 
 
+## Assignment 
+```
+    class Car {
+        public void move() {
+            System.out.println("Moves car"); 
+        }
+    }
 
+    class SUV extends Car {
+        boolean fourWheelDrive() {
+            return true; 
+        }
+    }
+    class HatchBack extends Car {
+        public int fuelCapacity() {
+            // generate random number (20-40)
+            return the value 
+        }
+    }
+
+    class Maruti extends SUV {
+        // have few more methods
+    }
+    ... 
+
+    class Maruti extends HatchBack {
+
+    }
+    
+
+    class Client {
+        public static void main(String [] args) {
+            
+        }
+    }
+```
 
 
 
