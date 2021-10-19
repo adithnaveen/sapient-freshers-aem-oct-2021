@@ -72,19 +72,6 @@ public class Employee {
 	void myDefaultMethod() {
 		System.out.println("I'm accessable only with in the package.. ");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	 
 	
 }

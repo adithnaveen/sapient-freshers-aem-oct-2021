@@ -171,3 +171,126 @@ Employee e = new Employee();
 
 PS 
 - Employee (name, salary, address) -> injected to the system -> (***) -> Employee Details + EmpId (static)
+
+
+- Inheritence  (Parent - child )
+  - is-a (extends)
+    - Employee is a Person 
+    - Human is a animal 
+    - ProjectManager is a Employee 
+
+    - In java only simple inhe, multi level inhe is possible 
+
+
+    ```
+        class Car {
+            public void drive() {}
+            prirvate void drive1() {}
+        }
+        class Maruti extends Car {
+             public void drive() {}
+             void drive1() {} (x) 
+        }
+        class Hyundai extends Car {}
+    ```
+
+
+
+
+  - has-a 
+    - Car has a mirror 
+    - Bike has a petrol tank 
+    - Holds the reference of another object 
+
+
+```
+    class Employee  {
+        private int empId; 
+        private Name name; 
+        private double salary; 
+        private Address address; 
+    }
+
+    class Customer  {
+        private int customId; 
+        private Name name; 
+        private double income; 
+        private Address address; 
+    }
+
+    class Address  {
+        private int hNo; 
+        private String street; 
+        private int pin;
+        private String state; 
+        private String city; 
+
+    }   
+
+    class Name {
+        private String firstName; 
+        private String lastName; 
+    }
+
+
+    Employee emp = new Employee(); 
+    Name name = new Name(); 
+    name.setFirstName("Ronak"); 
+    name.setLastName("Parmar"); 
+    ...
+    emp.setName(name); 
+    ...
+
+```
+
+
+
+
+
+- polymorphism 
+   1. Compile time 
+      1. with the help of overloading it is done either by  method or constructor 
+      2. same method name diff signature 
+      3. happens in same class
+   2. Run time 
+      1. Overriding with method only 
+      2. same method name same signature 
+      3. happens in different class provided they are inherited (parent - child )
+   
+<br >
+
+- if you have the class marked as final then you cannot inherit 
+- if you have method marked as final then you cannot override 
+- if you have the method as private then you cannot override 
+- if you have the method as static then inheritence is not supported 
+
+
+final - class level, method level, for constants 
+
+```
+
+class Dad - final
+    - work 
+
+
+class son(you)
+    - work @Override 
+    - play 
+
+
+class son(brother)
+    - work 
+    - trekking 
+ 
+ Dad <-  son 
+ son(brother) <- son(you)
+```
+
+
+
+
+
+
+
+
+
