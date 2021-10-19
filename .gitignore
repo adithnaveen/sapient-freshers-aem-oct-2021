@@ -1,4 +1,6 @@
 *.class
 documents
-/wordspace/.metadata
+/workspace/.metadata
+*.classpath
+*.project
 
