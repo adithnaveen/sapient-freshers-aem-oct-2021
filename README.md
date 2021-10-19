@@ -21,4 +21,88 @@
 - Arti - Btech, CS, play badminton, cooking, 7/10 
 - Yogesh - CS, Mumbai university, play chess, walking in evening, reading books, 5/10
 
- 
+
+## List of OOPS Concepts in Java 
+- Inheritence 
+- Encapulation
+- Abstraction
+- Polymorphism 
+
+### JVM 
+- What is JVM 
+- Change src to byte code 
+- Platform independent 
+- JDK VS JRE 
+- in JRE you have JVM 
+- JDK - Helps in compiling 
+
+<hr/>
+
+
+### Hello World Program 
+```
+public class Hello {
+    public static void main(String [] args) {
+        int x=10; 
+        boolean flag; 
+        System.out.println("Hello");
+        System.out.println(x);
+        System.out.println(flag);
+        hi();
+    }
+
+    void hi() {}
+}
+```
+
+
+- C / C++ 
+```
+#DEFINE main hello
+    int hello() {}
+
+
+    void main() {}
+```
+
+
+### Platform Independence 
+- Windows - Java -> .java -> .class -> jvm 
+- Mac - Java -> .java -> .class -> jvm 
+- Sun Solaris  - Java -> .java -> .class -> jvm 
+- Linux - Java -> .java -> .class -> jvm 
+- 
+
+
+
+
+
+
+### Tools needed 
+- We will use Java11 
+- IDE - Eclipse, IntelliJ, VS Code, Net Beans 
+
+<img src="./images/day1.drawio.png" width="200">
+
+
+### Software List 
+- https://www.eclipse.org/downloads/packages/release/neon/3/eclipse-ide-java-ee-developers
+- https://git-scm.com/downloads
+- https://code.visualstudio.com/download
+- https://www.oracle.com/java/technologies/downloads/#java11
+- 
+
+## Day 1 Agenda 
+- Creating Classes in Java, 
+- Working with Classes in Java, 
+- Making methods and classes final, 
+- OOPS- Inheritance,
+- Overriding methods, 
+- Packages -Package access
+- Documentation comments,  
+
+## List of OOPS Concepts in Java 
+- Inheritence 
+- Encapulation
+- Abstraction
+- Polymorphism 
