@@ -3,4 +3,5 @@ documents
 /workspace/.metadata
 *.classpath
 *.project
+workspace/.sonarlint/**
 

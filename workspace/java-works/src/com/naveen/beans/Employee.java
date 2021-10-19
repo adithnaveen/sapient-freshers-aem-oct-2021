@@ -5,16 +5,30 @@ public class Employee {
 	private String empName; 
 	private double empSalary; 
 	
+	private static int counter =100; 
 	
-//	Employee() - implicitly given by compiler if you dont have 
+	// getter
+	public static int getCounter() {
+		return counter; 
+	}
+	
+	
+//	Employee() - implicitly given by compiler if you don't have 
 	public Employee() {
 		System.out.println("Employee Contructor Called...");
 	}
 	
 	public Employee(int empId, String empName, double empSalary) {
-		this.empId = empId;
-		this.empName  = empName; 
-		this.empSalary = empSalary; 
+		setEmpId(empId);
+		setEmpName(empName);
+		setEmpSalary(empSalary);
+	}	
+	 
+
+	public Employee(String empName, double empSalary) {
+		setEmpId(counter++);
+		setEmpName(empName);
+		setEmpSalary(empSalary);
 	}
 	
 	// you have to expose getters and setters 
@@ -49,4 +63,28 @@ public class Employee {
 		}else 
 			this.empSalary = empSalary; 
 	}
+	
+	
+	protected void myProtectedMethod() {
+		System.out.println("Hi i'm from protected... ");
+	}
+	
+	void myDefaultMethod() {
+		System.out.println("I'm accessable only with in the package.. ");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

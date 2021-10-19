@@ -166,3 +166,8 @@ Employee e = new Employee();
 - static 
 - synchronized 
 - Abstract 
+
+
+
+PS 
+- Employee (name, salary, address) -> injected to the system -> (***) -> Employee Details + EmpId (static)
