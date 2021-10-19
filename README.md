@@ -29,7 +29,7 @@
 - Polymorphism 
 
 ### JVM 
-- What is JVM 
+- - What is JVM 
 - Change src to byte code 
 - Platform independent 
 - JDK VS JRE 
@@ -106,3 +106,63 @@ public class Hello {
 - Encapulation
 - Abstraction
 - Polymorphism 
+
+
+### Usage of variables 
+- packages - lower case (com.ps.beans, org.ps.controller)
+- varaibles - camel case (empId, salaryDrawn, address, withDraw)
+- method names - camel case (getEmpId(), withDrawSalary(), makePayment(), getDataFromServer())
+- class names - pascal case (Employee.java, HelloWorld.java, SomeController.java)
+- constants - uppercase - (PI, LOCATION, VERSION)
+- +++ indentation 
+
+- What is a class 
+    - is blue print of the object, 
+    - Every class shall have characteristics 
+  
+- What is a Object 
+- What is instance variable 
+<!-- - what is static variable 
+- What is static method 
+- what is static block  -->
+- what is local variable 
+
+
+class Employee {
+    int empId; 
+    String empName;
+    float empSalary
+    int empDept;
+    int empAge;
+
+    void hi() {
+        int x; 
+    }
+}
+
+
+
+
+Employee e; 
+Employee e = new Employee(); 
+
+
+- jar file is collection of class files + properties etc 
+- java documentation to understand .jar content 
+- WORM - Write Once Read Many 
+- DRY - Dont Repeate Yourself 
+
+
+### Access Specifiers 
+- Encapulation
+  - public 
+  - private 
+  - protected
+  - default (package)
+- keep all your variable private, you access it with getters / setters 
+
+### Access Modifiers 
+- final 
+- static 
+- synchronized 
+- Abstract 
