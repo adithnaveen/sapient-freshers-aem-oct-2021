@@ -337,8 +337,7 @@ class son(brother)
 - Exception Handling and Assertions
 - Exception handling with try-throw-catch-finally construct	
 - Reference Types and Threading, 
-- Working with types: Wrapper classes, 
-
+- Working with types: Wrapper classes 
 
 
 
@@ -443,6 +442,34 @@ throws - you can throw multiple, is at method level, your exception or java's ex
 | can have concrete mehtod      | 100% abstract                   |
 | you can have variables        | no variables here               |
 
+
+
+
+- why are we using wrapper class why not type casting 
+  - it gets associated with class 
+  - from converting from one object to another object 
+
+
+    ```
+        int x=10; 
+        double d = x; 
+        short s = (short) d; 
+    ```
+
+  - it cannot be directly stored in to secodary device (serialize)
+- collection & generics they dont support primititve 
+- to support java.util packages 
+- one int x  -> two  
+
+
+## Threads 
+
+| Process                  | Threads                          |
+| ------------------------ | -------------------------------- |
+| OS Concept               | Programming concept              |
+| Java, MS Word, Excel etc | main, T1-ronak, T2-ashotosh etc  |
+| all controlled by OS     | Controlled by Developer          |
+| priority managed by OS   | You can set  Min 1 Max 10 Norm 5 |
 
 
 
