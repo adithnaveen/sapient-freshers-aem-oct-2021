@@ -472,7 +472,58 @@ throws - you can throw multiple, is at method level, your exception or java's ex
 | priority managed by OS   | You can set  Min 1 Max 10 Norm 5 |
 
 
+### Creating a thread 
+1. Extend a class with Thread class 
+2. Implmenting an interface Runnable (run)
 
 plan 
 casestudy 
 github 
+
+
+
+
+- What services are needed 
+  - Beans 
+  - Array 
+  - Some Business logic which can work at CLI 
+  - 
+
+
+- on desktop 
+
+> git config --global user.name "Naveen Kumar Srinivas (C)" 
+
+> git config --global user.email "navkumar35@partners.publicisgroupe.net"
+
+> git clone https://tools.publicis.sapient.com/bitbucket/scm/poatb/training.git
+
+> git branch -a 
+
+> git checkout main 
+
+> ls 
+
+
+> git add . 
+
+> git commit -m "your comments" 
+
+> git push origin main 
+
+> git pull 
+
+
+T1 - RONAK, MANAV 
+T2 - AMIT, AAKASH 
+T3 - ASHUTOSH, RISHAB
+T4 - PANKHURI, ARJUN 
+T5 - ARTI, MAYURESH 
+T6 - SRISHTI, HEMANTH 
+T7 - SAJID, LOKESH
+T8 - UTKARSH, YOGESH
+T9 - BHAVYA, VISHAV, SHIVANAND 
+
+
+
+
