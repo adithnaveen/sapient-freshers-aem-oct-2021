@@ -448,15 +448,13 @@ throws - you can throw multiple, is at method level, your exception or java's ex
 - why are we using wrapper class why not type casting 
   - it gets associated with class 
   - from converting from one object to another object 
-
-
     ```
         int x=10; 
         double d = x; 
         short s = (short) d; 
     ```
 
-  - it cannot be directly stored in to secodary device (serialize)
+- it cannot be directly stored in to secodary device (serialize)
 - collection & generics they dont support primititve 
 - to support java.util packages 
 - one int x  -> two  
