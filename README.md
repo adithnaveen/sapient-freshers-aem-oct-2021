@@ -6,7 +6,7 @@
 - Amit - Btech CS Bhopal MP, Wating movies, web series, 5/10 
 - Ashutosh - Patna, Bihar, Btech kolkatta, CS, play cricket, 6.5/10
 - Arjun - Btech CS, VIT, exploring foods, 4/10
-- Bhavya - Btech, CS, AP, watingh movies, listening music 5.5/10
+- Bhavya - Btech, CS, AP, watching movies, listening music 5.5/10
 - Hemanth - Btech E&C, 6.5/10, travelling 
 - Lokesh - IT, Bareli, play cricket, swim ,  4/10
 - Manav - Btech, CS, play foot ball, mutualfunds, cryptocurrency, 4/10 
@@ -122,9 +122,9 @@ public class Hello {
   
 - What is a Object 
 - What is instance variable 
-<!-- - what is static variable 
+- what is static variable 
 - What is static method 
-- what is static block  -->
+- what is static block  
 - what is local variable 
 
 
@@ -326,6 +326,63 @@ class son(brother)
 ```
 
 
+# Day2 
+
+- retro 
+- how jar works 
 
 
 
+## Agenda 
+- Exception Handling and Assertions
+- Exception handling with try-throw-catch-finally construct	
+- Reference Types and Threading, 
+- Working with types: Wrapper classes, 
+
+
+
+
+
+## List of OOPS Concepts in Java 
+- [x] Inheritence 
+- [x] Encapulation
+- [x] Abstraction
+- [x] Polymorphism 
+
+- draw a car 
+
+
+```
+    abstract class Vehicle {
+        public abstract void move();
+    }
+    abstract class Car extends Vehicle  {
+        public abstract void steering();
+        public void doors() {
+            // all cars will have 4 doors 
+        }
+    }
+    class Maruti extends Car {
+        + Overriden Method move()
+        public void abs() {}
+    }
+    class BMW extends Car {
+        + Overriden Method move()
+        public void airBags() {}
+    }
+```
+
+
+## Abstraction 
+- if you have a abstract method in the class it should be marked with ; 
+- if you have atleast 1 abstract method then the class has to be marked as abstract
+- if you have the abstract class then you cannot create an object (instantiate), but remember you can hold reference 
+  - Car c; 
+- if you have a abstract class which extends abstract class then having the implementation is optional 
+- if you have any class which extends abstract class then the abstract mehtods should be overrident MANDATORY 
+- an abstract class can have mix of abstract methods and concrete methods 
+
+## Exception 
+
+- if you have unchecked exception then you dont have to handle it explictily, JVM will take care by default 
+- 

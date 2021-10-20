@@ -11,7 +11,7 @@ public class EmployeeClient {
 		
 	
 		 
-		emp.setEmpName("Manav");
+		emp.setEmpName("Man");
 		emp.setEmpSalary(-1234);
 		
 		System.out.println(emp.hashCode());
