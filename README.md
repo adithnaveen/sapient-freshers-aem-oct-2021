@@ -385,4 +385,25 @@ class son(brother)
 ## Exception 
 
 - if you have unchecked exception then you dont have to handle it explictily, JVM will take care by default 
-- 
+- try - catch 
+- try - catch catch 
+- try - catch (specific) catch (specific) catch (generic)
+- try - try - catch - try - catch 
+- try - catch - finally 
+- try - finally 
+- try - catch -fianlly - try -catch 
+
+
+
+### custom exception 
+Salary - IT Return - declares some min salary limit - thorw some exception 
+    - SalaryImproperException 
+    - NameTooShortException 
+
+throw - you can throw only 1 exception, is at statement level, your exception or java's exception 
+throws - you can throw multiple, is at method level, your exception or java's exception 
+
+
+plan 
+casestudy 
+github 

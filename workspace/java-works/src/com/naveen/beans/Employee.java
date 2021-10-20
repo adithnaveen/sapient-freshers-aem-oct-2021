@@ -72,6 +72,13 @@ public class Employee {
 	void myDefaultMethod() {
 		System.out.println("I'm accessable only with in the package.. ");
 	}
+
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + "]";
+	}
+ 
 	 
 	
 }
