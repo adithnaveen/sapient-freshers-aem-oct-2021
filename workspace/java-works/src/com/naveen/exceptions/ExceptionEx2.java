@@ -8,7 +8,7 @@ public class ExceptionEx2 {
 		}
 	}
 
-	public static void processIncomeTax(String name, double income, String companyName) 
+	public static void processIncomeTax(String name, double income, Company companyName) 
 				throws NameTooShortException, Exception {
 		try {
 			checkName(name);
@@ -16,10 +16,14 @@ public class ExceptionEx2 {
 			throw new Exception("Sorry could not process", e); 
 		}
 		
-		// if salary < 1000 && companyname is sapient 
-			// throw SapientSalaryTooLessException
-		// if salary < 750 && companyname is infosys
-			// throw InfosysSalaryTooLessException
+		if(income < 1000 && companyName.equals(Company.SAPIENT)) {
+			throw new SapientSalaryTooLessException("Please check before filing " + name +
+					" wrong income " + income);
+		}else if(income < 750 && companyName.equals(Company.INFOSYS)) {
+			throw new InfosysSalaryTooLessException("Please check before filing " + name 
+					+ " wrong income " + income);
+		}
+		 
 		
 		System.out.println("Thank you Mr / Ms / Mrs : "+ name + " IT Filing Successful");
 		
@@ -28,8 +32,12 @@ public class ExceptionEx2 {
 
 	public static void main(String[] args) {
 		try {
-			processIncomeTax("har", 1234, "Sapient");
+			processIncomeTax("har", 1234, Company.SAPIENT );
 		} catch (NameTooShortException ntse) {
+			ntse.printStackTrace();
+		} catch (SapientSalaryTooLessException ntse) {
+			ntse.printStackTrace();
+		} catch (InfosysSalaryTooLessException ntse) {
 			ntse.printStackTrace();
 		} catch(Exception e) {
 			e.printStackTrace();

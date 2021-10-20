@@ -404,6 +404,48 @@ throw - you can throw only 1 exception, is at statement level, your exception or
 throws - you can throw multiple, is at method level, your exception or java's exception 
 
 
+## Interface's 
+- Java support multiple inheritence with interfaces only 
+- you can have a class implmenting more than 1 interfaces 
+- an interface can extend 1 or more interfaces 
+- an interface is 100% abstract 
+- an interface is declared with keyword interface 
+- an interface has nothing to do with object class 
+- in interface the only access specifier is public 
+- in interface you cannot have variables > final, static 
+
+
+```
+    interface Car {
+        move(); 
+    }
+    interface IndianStandard {
+        tyreMinSize();
+    }
+    interface KarnatakaStandara extends IndianStandard {
+
+    }
+
+    // the class implementing the interface have to override 
+    // the mehtods which are in interface 
+    class Maruti implements Car, IndianStandard {
+        
+    }
+```
+
+
+| Abstract Classes              | Interface                       |
+| ----------------------------- | ------------------------------- |
+| Class                         | Interface                       |
+| Multi level                   | Multiple                        |
+| extends                       | implements                      |
+| has reference to object class | Nothing to do with Object class |
+| can have concrete mehtod      | 100% abstract                   |
+| you can have variables        | no variables here               |
+
+
+
+
 plan 
 casestudy 
 github 
