@@ -638,10 +638,37 @@ class Node {
 
 - Property 
 
-GoodMorning - Good Morning, Shubodaya, Bonjour, 0
+GoodMorning - Good Morning, Shubodaya, Bonjour, 
 GoodNight - Good Night, Shubharatri, bonne nuit
 
 Map<String, String [] >
 Map<String, ArrayList<String>>
 
 
+- IO Operations 
+  - Char - Reader /Writer 
+  - Byte - InputStream / OutPutStream - you have to serialize 
+
+
+---------------- 
+
+1. Store new Synoym 
+2. Get Synonym for Word
+3. Exit 
+
+1. Enter word 
+   Hello 
+    Please enter synonym (0 to exit)
+    Bon 
+    Hello 
+    Namskara 
+    0 
+
+1. Store new Synoym 
+2. Get Synonym for Word
+3. Exit 
+
+2. Please enter a word to look for synonym: Hello <enter>
+    Bon 
+    Hello 
+    Namskara 
