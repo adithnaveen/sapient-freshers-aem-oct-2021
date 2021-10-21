@@ -55,9 +55,9 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee o) {
-//		return this.empId - o.empId; 
+		return o.empId - this.empId; 
 //		return this.empName.compareTo(o.getEmpName());
-		// sort on age descending 
-		return 0; 
+		// sort on age descending (but its missing) 
+//		return o.age - age; 
 	} 
 }

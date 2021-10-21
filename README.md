@@ -528,9 +528,9 @@ T9 - BHAVYA, VISHAV, SHIVANAND
 
 # Day 3 
 
-- [ ] Java Generics & Collections
-- [ ] Generics and Annotations
-- [ ] Collection classes,LIST, SET, MAP, GRAPH
+- [x] Java Generics & Collections
+- [x] Generics and Annotations
+- [x] Collection classes,LIST, SET, MAP, GRAPH
 - [ ] I/O Package 
   - InputStream , OutputStream classes, 
   - Reader Classes, and Writer classes	
@@ -581,21 +581,67 @@ java.util
         - Queue
       - Set (stores unique only )
           - HashSet - Unordered - Store First Stratergy 
-          - TreeSet - Ordered- sorted (asc / desc) 
-
+          - TreeSet - Ordered- sorted (asc / desc) - the object should implement Comparable interface 
+          - Comparator    
 Employee [empId=103, empName=Akash, age=21], 1221555852
 Employee [empId=103, empName=Akash, age=21], 1705929636
 Employee [empId=102, empName=Bhavya, age=21], 1297685781
 Employee [empId=101, empName=Rishab, age=22], 511833308
 
 
+Employee [empId=103, empName=Akash, age=21], 65
+Employee [empId=103, empName=Akash, age=21], 65
+Employee [empId=101, empName=Rishab, age=22], 82
+Employee [empId=102, empName=Bhavya, age=21], 66
 
 
+Employee [empId=103, empName=Akash, age=21], 65
+Employee [empId=101, empName=Rishab, age=22], 82
+Employee [empId=102, empName=Bhavya, age=21], 66
 
 
       - Map
         - HashMap
         - LinkHashMap
         - TreeMap
-        - 
-      - Property 
+        <Key, Value> - Key - is unique, overrite 
+
+        class FoodItem {
+            String name; 
+            double cost; 
+        }
+
+        Map<String, FoodItem> choice = new HashMap<String, FoodItem> (); 
+        <"rishab", new FoodItem("Pizza", 100)>
+        <"hemanth", new FoodItem("Burger", 234)> 
+
+        List<FoodItem> choices = new ArrayList<FoodItem> (); 
+        choices.add(new FoodItem("Pizza", 100)); 
+        choices.add(new FoodItem("Burger", 200)); 
+
+         <"rishab", choices>
+
+        Map<String, List<FoodItem>> rishabChoices = new HashMap<String, List<FoodItem>>();
+
+
+        Map<String, Map<String, List>>
+
+        Map<String, List<Map<String, List>>>
+
+
+to represent graph 
+
+class Node {
+    List<Node>
+    int val; 
+}
+
+- Property 
+
+GoodMorning - Good Morning, Shubodaya, Bonjour, 0
+GoodNight - Good Night, Shubharatri, bonne nuit
+
+Map<String, String [] >
+Map<String, ArrayList<String>>
+
+
