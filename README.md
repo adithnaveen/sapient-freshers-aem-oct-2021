@@ -502,7 +502,6 @@ github
 
 > ls 
 
-
 > git add . 
 
 > git commit -m "your comments" 
@@ -525,3 +524,78 @@ T9 - BHAVYA, VISHAV, SHIVANAND
 
 
 
+
+
+# Day 3 
+
+- [ ] Java Generics & Collections
+- [ ] Generics and Annotations
+- [ ] Collection classes,LIST, SET, MAP, GRAPH
+- [ ] I/O Package 
+  - InputStream , OutputStream classes, 
+  - Reader Classes, and Writer classes	
+
+
+- Generics 
+
+List<> - raw types 
+    - Hemanth
+    - Shivanand
+    - Tiger
+    - Ant 
+    - Elephant 
+
+- type safe 
+List< Integer >
+    - 23
+    - 45
+    - 66
+    - 77
+    - 44
+  
+List < Employee >
+    - Hemanth 
+    - Shivanand 
+    - Lokesh
+    - Arti 
+
+
+int arr [] = new int [4]; 
+arr[0] = 100; 
+arr[1] = 200; 
+arr[2] = 300; 
+arr[3] = 400; 
+arr[4] = 500;  [x]
+
+java.util 
+
+- Iterable 
+  - iterator() 
+  - Collection 
+    - ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized
+      - List  (stores duplicate also )
+        - ArrayList 
+        - Vector 
+        - LinkedList
+        - Stack 
+        - Queue
+      - Set (stores unique only )
+          - HashSet - Unordered - Store First Stratergy 
+          - TreeSet - Ordered- sorted (asc / desc) 
+
+Employee [empId=103, empName=Akash, age=21], 1221555852
+Employee [empId=103, empName=Akash, age=21], 1705929636
+Employee [empId=102, empName=Bhavya, age=21], 1297685781
+Employee [empId=101, empName=Rishab, age=22], 511833308
+
+
+
+
+
+
+      - Map
+        - HashMap
+        - LinkHashMap
+        - TreeMap
+        - 
+      - Property 
