@@ -79,8 +79,7 @@ public class Hello {
 
 
 ### Tools needed 
-- We will use Java11 
-- IDE - Eclipse, IntelliJ, VS Code, Net Beans 
+- We will use Java- - IDE - Eclipse, IntelliJ, VS Code, Net Beans 
 
 <img src="./images/day1.drawio.png" width="200">
 
@@ -89,8 +88,7 @@ public class Hello {
 - https://www.eclipse.org/downloads/packages/release/neon/3/eclipse-ide-java-ee-developers
 - https://git-scm.com/downloads
 - https://code.visualstudio.com/download
-- https://www.oracle.com/java/technologies/downloads/#java11
-- 
+- https://www.oracle.com/java/technologies/downloads/#java-  
 
 ## Day 1 Agenda 
 - Creating Classes in Java, 
@@ -586,7 +584,7 @@ java.util
 Employee [empId=103, empName=Akash, age=21], 1221555852
 Employee [empId=103, empName=Akash, age=21], 1705929636
 Employee [empId=102, empName=Bhavya, age=21], 1297685781
-Employee [empId=101, empName=Rishab, age=22], 511833308
+Employee [empId=101, empName=Rishab, age=22], 5- 3308
 
 
 Employee [empId=103, empName=Akash, age=21], 65
@@ -714,93 +712,228 @@ tools.publicissapient.com/bitbucket/yourrepo (username + password )
 > <esc> :q - quit 
 > <esc> :q! - force quit 
 
+-   git commit -m "created main in first and package statement in second"
+ -   git status
+ 
+ - git remote -v 
+ 
+ -   git branch 
+ 
+ -   clear
+ 
+ -   git log 
+ 
+ -   git log --oneline 
+ 
+ -   clear
+ 
+ -   git branch new-branch
+ 
+ -   git branch 
+ 
+ -   pwd
+ 
+ -   code . 
+ 
+ -   clear
+ 
+ -   git branch 
+ 
+ -   git checkout new-branch 
+ 
+ -   git branch 
+ 
+ -   git status 
+ 
+ -   git add . 
+ 
+ -   git commit -m "class created"
+ 
+ -   clear
+ 
+ -   git branch 
+ 
+ -   git checkout main 
+ 
+ -   git checkout new-branch
+ 
+ -   git checkout main 
+ 
+ -   git add . 
+ 
+ -   git commit -m "added syso"
+ 
+ -   git status
+ 
+ -   clear
+ 
+ -   git branch 
+ 
+ -   git checkout new-branch 
+ 
+ -   git branch 
+ 
+ -   git checkout main 
+ 
+ -   git branch 
+ 
+ -   git merge new-branch
+ 
+ -   git branch 
+ 
+ -   cler
+ 
+ -   clear
+ 
+ -   git log --oneline
+ 
+ -   git log --oneline --graph --all 
+ --decorate
+ 
+ -   history --30 
+$
+ history -50
 
-1109  git commit -m "created main in first and package statement in second"
- 1110  git status
- 1111  git remote -v 
- 1112  git branch 
- 1113  clear
- 1114  git log 
- 1115  git log --oneline 
- 1116  clear
- 1117  git branch new-branch
- 1118  git branch 
- 1119  pwd
- 1120  code . 
- 1121  clear
- 1122  git branch 
- 1123  git checkout new-branch 
- 1124  git branch 
- 1125  git status 
- 1126  git add . 
- 1127  git commit -m "class created"
- 1128  clear
- 1129  git branch 
- 1130  git checkout main 
- 1131  git checkout new-branch
- 1132  git checkout main 
- 1133  git add . 
- 1134  git commit -m "added syso"
- 1135  git status
- 1136  clear
- 1137  git branch 
- 1138  git checkout new-branch 
- 1139  git branch 
- 1140  git checkout main 
- 1141  git branch 
- 1142  git merge new-branch
- 1143  git branch 
- 1144  cler
- 1145  clear
- 1146  git log --oneline
- 1147  git log --oneline --graph --all --decorate
- 1148  history --30 
-$ history -50
- 1100  ls
- 1101  vi Second.java
- 1102  git status 
- 1103  cat First.java
- 1104  cat Second.java
- 1105  git status 
- 1106  clear
- 1107  git add . 
- 1108  git status
- 1109  git commit -m "created main in first and package statement in second"
- 1110  git status
- 1111  git remote -v 
- 1112  git branch 
- 1113  clear
- 1114  git log 
- 1115  git log --oneline 
- 1116  clear
- 1117  git branch new-branch
- 1118  git branch 
- 1119  pwd
- 1120  code . 
- 1121  clear
- 1122  git branch 
- 1123  git checkout new-branch 
- 1124  git branch 
- 1125  git status 
- 1126  git add . 
- 1127  git commit -m "class created"
- 1128  clear
- 1129  git branch 
- 1130  git checkout main 
- 1131  git checkout new-branch
- 1132  git checkout main 
- 1133  git add . 
- 1134  git commit -m "added syso"
- 1135  git status
- 1136  clear
- 1137  git branch 
- 1138  git checkout new-branch 
- 1139  git branch 
- 1140  git checkout main 
- 1141  git branch 
- 1142  git merge new-branch
- 1143  git branch 
- 1144  cler
- 1145  clear
- 1146  git log --oneline
- 1147  git log --oneline --graph --all --decorate
+
+ -   ls
+
+ -   vi Second.java
+
+ -   git status 
+
+ -   cat First.java
+
+ -   cat Second.java
+
+ -   git status 
+
+ -   clear
+
+ -   git add . 
+
+ -   git status
+
+ -   git commit -m "created main in first 
+ and package statement in second"
+ 
+ -   git status
+ 
+ - git remote -v 
+ 
+ -   git branch 
+ 
+ -   clear
+ 
+ -   git log 
+ 
+ -   git log --oneline 
+ 
+ -   clear
+ 
+ -   git branch new-branch
+ 
+ -   git branch 
+ 
+ -   pwd
+ 
+ -   code . 
+ 
+ -   clear
+ 
+ -   git branch 
+ 
+ -   git checkout new-branch 
+ 
+ -   git branch 
+ 
+ -   git status 
+ 
+ -   git add . 
+ 
+ -   git commit -m "class created"
+ 
+ -   clear
+ 
+ -   git branch 
+ 
+ -   git checkout main 
+ 
+ -   git checkout new-branch
+ 
+ -   git checkout main 
+ 
+ -   git add . 
+ 
+ -   git commit -m "added syso"
+ 
+ -   git status
+ 
+ -   clear
+ 
+ -   git branch 
+ 
+ -   git checkout new-branch 
+ 
+ -   git branch 
+ 
+ -   git checkout main 
+ 
+ -   git branch 
+ 
+ -   git merge new-branch
+ 
+ -   git branch 
+ 
+ -   git log --oneline
+ 
+ -   git log --oneline --graph --all --decorate
+
+
+
+-   git branch --help
+-   git branch -a
+-   git branch -d new-branch 
+-   git branch -a 
+-   git checkout --help
+-   git checkout -b my-new-branch main 
+-   git branch 
+-   git diff main..my-new-branch
+-   git status 
+-   git add . 
+-   git commit -m "new method called hello in my-new-branch"
+-   git diff main..my-new-branch
+-   git diff main^..my-new-branch
+-   git diff main..my-new-branch^
+-   git diff main..my-new-branch^^
+-   git branch 
+-   git branch -m new-branch
+-   git branch 
+-   git checkout main 
+-   git branch 
+-   git branch --merged
+-   git branch --no-merged
+-   git merge new-branch
+-   git branch --no-merged
+-   git log --oneline
+-   git checkout -b intrim-checkout d127555
+-   git branch 
+-   git checkout main 
+-   git log 
+-   git log --oneline 
+-   git log --oneline  -5 
+-   git branch -d new-branch
+-   git log --oneline 
+-   history -20 
+-   history -30 
+
+
+
+
+
+- Branching strategy 
+- Mono Repo Concept 
+
+
+- create project 
+    - command line 
+    - IDE - Eclipse 
