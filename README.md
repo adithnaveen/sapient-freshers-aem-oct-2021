@@ -582,7 +582,7 @@ java.util
       - Set (stores unique only )
           - HashSet - Unordered - Store First Stratergy 
           - TreeSet - Ordered- sorted (asc / desc) - the object should implement Comparable interface 
-          - Comparator    
+          - Comparator
 Employee [empId=103, empName=Akash, age=21], 1221555852
 Employee [empId=103, empName=Akash, age=21], 1705929636
 Employee [empId=102, empName=Bhavya, age=21], 1297685781
@@ -672,3 +672,135 @@ Map<String, ArrayList<String>>
     Bon 
     Hello 
     Namskara 
+
+--- 
+Difference Between 
+- Scanner - function, all data is got in 1 go , sc.nextInt(), scanf, 
+- Buffered Reader/InputStream - read data in the form of text / bytes, br.readLine() (ISR), cin >> , throws checked exception IOException 
+
+
+--- 
+# Day 4
+
+"What is a build tool?, Overview of Maven, Environment Setup, Maven POM File, Creating a java project using maven, Maven Directory Structure, Project
+o External Dependencies
+Maven Repository
+Build Lifecycle, phases and goals
+Executing the mvn command
+
+Introduction to Git,  Creating branch, working with merge stratergy, working with remote Github/bitbucket"	
+
+
+tools.publicissapient.com/bitbucket/yourrepo (username + password )
+
+--global - shivanand 
+--system - ronak 
+--local - only for specific folder 
+
+> c:\myfolder 
+
+> c:\yourfolder 
+
+> c:\somefolder 
+
+> git config --global user.name "naveen kumar"
+
+> git config --global user.email "llid@publicissapient.com"
+
+> git config --global --edit 
+
+
+> <esc> :wq - write and quit 
+> <esc> :q - quit 
+> <esc> :q! - force quit 
+
+
+1109  git commit -m "created main in first and package statement in second"
+ 1110  git status
+ 1111  git remote -v 
+ 1112  git branch 
+ 1113  clear
+ 1114  git log 
+ 1115  git log --oneline 
+ 1116  clear
+ 1117  git branch new-branch
+ 1118  git branch 
+ 1119  pwd
+ 1120  code . 
+ 1121  clear
+ 1122  git branch 
+ 1123  git checkout new-branch 
+ 1124  git branch 
+ 1125  git status 
+ 1126  git add . 
+ 1127  git commit -m "class created"
+ 1128  clear
+ 1129  git branch 
+ 1130  git checkout main 
+ 1131  git checkout new-branch
+ 1132  git checkout main 
+ 1133  git add . 
+ 1134  git commit -m "added syso"
+ 1135  git status
+ 1136  clear
+ 1137  git branch 
+ 1138  git checkout new-branch 
+ 1139  git branch 
+ 1140  git checkout main 
+ 1141  git branch 
+ 1142  git merge new-branch
+ 1143  git branch 
+ 1144  cler
+ 1145  clear
+ 1146  git log --oneline
+ 1147  git log --oneline --graph --all --decorate
+ 1148  history --30 
+$ history -50
+ 1100  ls
+ 1101  vi Second.java
+ 1102  git status 
+ 1103  cat First.java
+ 1104  cat Second.java
+ 1105  git status 
+ 1106  clear
+ 1107  git add . 
+ 1108  git status
+ 1109  git commit -m "created main in first and package statement in second"
+ 1110  git status
+ 1111  git remote -v 
+ 1112  git branch 
+ 1113  clear
+ 1114  git log 
+ 1115  git log --oneline 
+ 1116  clear
+ 1117  git branch new-branch
+ 1118  git branch 
+ 1119  pwd
+ 1120  code . 
+ 1121  clear
+ 1122  git branch 
+ 1123  git checkout new-branch 
+ 1124  git branch 
+ 1125  git status 
+ 1126  git add . 
+ 1127  git commit -m "class created"
+ 1128  clear
+ 1129  git branch 
+ 1130  git checkout main 
+ 1131  git checkout new-branch
+ 1132  git checkout main 
+ 1133  git add . 
+ 1134  git commit -m "added syso"
+ 1135  git status
+ 1136  clear
+ 1137  git branch 
+ 1138  git checkout new-branch 
+ 1139  git branch 
+ 1140  git checkout main 
+ 1141  git branch 
+ 1142  git merge new-branch
+ 1143  git branch 
+ 1144  cler
+ 1145  clear
+ 1146  git log --oneline
+ 1147  git log --oneline --graph --all --decorate
