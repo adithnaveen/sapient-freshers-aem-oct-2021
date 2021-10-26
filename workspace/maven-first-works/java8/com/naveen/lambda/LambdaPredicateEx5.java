@@ -2,7 +2,14 @@ package com.naveen.lambda;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
+/**
+ * 
+ * @author naveenkumar
+ *
+ */
 class Account {
 	private int accId;
 	private String custName; 
@@ -62,16 +69,24 @@ public class LambdaPredicateEx5 {
 				new Account(44, "Harry", 1122, "male") 
 				); 
 		
+
+			
+		AccountPredicate.filterAccounts(list, AccountPredicate.onlyMale()).forEach(System.out :: println);
 		
-		
-		
-		
-		
-		
-		
-		
-		
+ 		
 	}
+	
+	static class AccountPredicate {
+		public static Predicate<Account> onlyMale() {
+			return p -> p.getSex().equals("male"); 
+		}
+		
+		public static List<Account> filterAccounts (List<Account> list,  Predicate<Account>  predicate) {
+			return list.stream().filter(predicate).collect(Collectors.toList()); 
+		}
+	}
+
+	
 }
 
 

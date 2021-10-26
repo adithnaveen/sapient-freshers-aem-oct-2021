@@ -966,7 +966,14 @@ Filtering and Mapping, Finding and Matching, Reductions
 Numeric Streams,Infinite Streams, Building Streams, Collectors
 Grouping and Partitioning, Parallel Streams 	
 
+try 
+    - Constructor References
+    - Infinite Streams (random) or you should not pass the limit 
 
+
+Afternoon 
+    - Collectors
+    - Grouping and Partitioning, Parallel Streams 
 
 ```
     class MyClass {
@@ -1020,6 +1027,24 @@ https://openjdk.java.net/jeps/126
 
 - if an interface has 1 mehtod then it is called as funcationa interface 
 - 
+
+
+
+
+
+
+difference between collection and streams 
+|----|-----|
+| collection                        | stream                                                             |
+| --------------------------------- | ------------------------------------------------------------------ |
+| this is stored                    | this is used for computation                                       |
+| the size can grow / shrink        | fixed Data structure                                               |
+| it can be passive                 | it is only active                                                  |
+| was there from long time          | introduced in Java 8                                               |
+| they dont use funcation interface | they use funcational interface                                     |
+| no concept of parallel processing | supports parallel processing                                       |
+| you can modify the content        | streams dont modify the content, Integer, Float, Double, String... |
+
 
 
 
