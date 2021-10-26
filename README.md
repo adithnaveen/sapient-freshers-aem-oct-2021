@@ -680,7 +680,7 @@ Difference Between
 --- 
 # Day 4
 
-"What is a build tool?, Overview of Maven, Environment Setup, Maven POM File, Creating a java project using maven, Maven Directory Structure, Project
+What is a build tool?, Overview of Maven, Environment Setup, Maven POM File, Creating a java project using maven, Maven Directory Structure, Project
 o External Dependencies
 Maven Repository
 Build Lifecycle, phases and goals
@@ -936,4 +936,90 @@ $
 
 - create project 
     - command line 
+      - mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
     - IDE - Eclipse 
+
+
+log4j 
+log4j2 
+logback
+slf4j 
+etc... 
+
+----
+
+# Day 5 
+
+-  Retro - Day 4 
+- alternative of maven 
+- what is the need of git how it is efficient 
+- what is maven why do we use maven 
+
+
+
+Section 1 - Lambda Expressions
+Interface Static Methods , Default Methods, Functional Interfaces , Lambda Syntax, Using Lambdas, Function Descriptors, Method References, Choosing Functional Interfaces, Constructor References, Closures, Lambda Compositions
+
+Section 2 - Streams API
+What are Streams?, Stream Advantages,Stream Operations, Streams vs. Collections
+Filtering and Mapping, Finding and Matching, Reductions
+Numeric Streams,Infinite Streams, Building Streams, Collectors
+Grouping and Partitioning, Parallel Streams 	
+
+
+
+```
+    class MyClass {
+        public static void main(String args[]) {
+            Thread t = new Runnable() {
+                public void run() {
+                    // blah blah... 
+                }
+            }
+        }
+    }
+
+    interface Runnable {
+        public void run();
+    }
+
+
+ class MyClass {
+        public static void main(String args[]) {
+            Thread t =  () -> {// blah blah... };
+            }
+        }
+    }
+
+```
+
+Hi -> BYE 
+
+
+- consice 
+- Increses the readability 
+- reduces boiler plate code 
+- it encourages funcational programming -> async 
+- The jar file when we build will be compact 
+- Code reuse etc... 
+
+
+https://openjdk.java.net/jeps/126
+
+```
+    public void add(int x, int y) {
+        return x +y 
+    }
+
+    ... 
+    int res = add(10, 20); 
+
+    int res = (x, y) -> x + y; 
+
+```
+
+- if an interface has 1 mehtod then it is called as funcationa interface 
+- 
+
+
+
