@@ -23,7 +23,7 @@ public class LambdaEx3 {
 
 			@Override
 			public int compare(Person o1, Person o2) {
-				return o1.getpId() - o2.getpId();
+				return o1.getPId() - o2.getPId();
 			}
 			
 		};
@@ -33,16 +33,16 @@ public class LambdaEx3 {
 		list.forEach(System.out :: println);
 		
 		// labmda way 
-		Collections.sort(list, (o1, o2) -> o2.getpId() - o1.getpId());
+		Collections.sort(list, (o1, o2) -> o2.getPId() - o1.getPId());
 		System.out.println("After sorting- descending order ");
 		list.forEach(System.out :: println);
 		
-		Collections.sort(list, (o1, o2) -> o1.getpName().compareTo(o2.getpName()));
+		Collections.sort(list, (o1, o2) -> o1.getPName().compareTo(o2.getPName()));
 		
 		System.out.println("Ascending order  of name");
 		list.forEach(System.out :: println);
 		
-		Comparator<Person> sortAscName = (o1, o2) -> o1.getpName().compareTo(o2.getpName());
+		Comparator<Person> sortAscName = (o1, o2) -> o1.getPName().compareTo(o2.getPName());
 		Collections.sort(list, sortAscName.reversed());
 
 		System.out.println("Descending order  of name");

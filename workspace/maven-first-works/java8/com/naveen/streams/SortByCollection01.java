@@ -5,11 +5,15 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import lombok.extern.slf4j.Slf4j;
+
 /** 
  * 
  * @author naveenkumar
  * @see to show working of sorting with collection style vs stream style 
  */
+
+@Slf4j
 public class SortByCollection01 {
 	public static void main(String[] args) {
 //		withOldStyle();
@@ -21,7 +25,7 @@ public class SortByCollection01 {
 		
 		// use only for large amount of data 
 		System.out.println("Using Parallel Stream.. ");
-		list.parallelStream().sorted().forEachOrdered(System.out :: println);
+		list.parallelStream().sorted().forEachOrdered(val -> log.info(val));
 		
 
 		

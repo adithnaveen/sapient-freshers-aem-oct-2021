@@ -973,7 +973,7 @@ try
 
 Afternoon 
     - Collectors
-    - Grouping and Partitioning, Parallel Streams 
+    - Grouping and Partitioning
 
 ```
     class MyClass {
@@ -1044,7 +1044,43 @@ difference between collection and streams
 | they dont use funcation interface | they use funcational interface                                     |
 | no concept of parallel processing | supports parallel processing                                       |
 | you can modify the content        | streams dont modify the content, Integer, Float, Double, String... |
+| ---                               | ---                                                                |
+
+
+    - in lambda Way 
+        accountList.sort((o1, o2) -> o1.getCustName().compareTwo(o2.getCustName())); 
+    - in method reference way 
+		accountList.sort(Comparator.comparing(Account:: getCustName));
 
 
 
 
+
+
+T1 - RONAK, MANAV - Amit 
+T2 - AMIT, AAKASH - Ashotosh
+T3 - ASHUTOSH, RISHAB - Pankhuri
+T4 - PANKHURI, ARJUN - Arti 
+T5 - ARTI, MAYURESH - Srishti 
+T6 - SRISHTI, HEMANTH - Sajid 
+T7 - SAJID, LOKESH - Utkash 
+T8 - UTKARSH, YOGESH - Bhavya 
+T9 - BHAVYA, VISHAV, SHIVANAND -Ronak 
+
+
+
+@Slf4j
+Causes lombok to generate a logger field.
+
+Complete documentation is found at the project lombok features page for lombok log annotations.
+
+Example:
+
+ @Slf4j
+ public class LogExample {
+ }
+ 
+will generate:
+ public class LogExample {
+     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(LogExample.class);
+ }

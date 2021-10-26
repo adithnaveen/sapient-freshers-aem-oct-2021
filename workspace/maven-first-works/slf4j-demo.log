@@ -5,3 +5,7 @@
 [Mon Oct 25, 2021 04:18:45,427 pm] [main           ] com.naveen.App hi i'm  debug
 [Mon Oct 25, 2021 04:18:45,427 pm] [main           ] com.naveen.App hi i'm from error
 [Mon Oct 25, 2021 04:18:45,428 pm] [main           ] com.naveen.App some values Sapient
+[Tue Oct 26, 2021 03:56:13,517 pm] [ForkJoinPool.commonPool-worker-5] com.naveen.streams.SortByCollection01 Amit
+[Tue Oct 26, 2021 03:56:13,518 pm] [ForkJoinPool.commonPool-worker-5] com.naveen.streams.SortByCollection01 Arti
+[Tue Oct 26, 2021 03:56:13,519 pm] [ForkJoinPool.commonPool-worker-5] com.naveen.streams.SortByCollection01 Pankhuri
+[Tue Oct 26, 2021 03:56:13,519 pm] [ForkJoinPool.commonPool-worker-5] com.naveen.streams.SortByCollection01 Sajid

@@ -1,36 +1,17 @@
 package com.naveen.lambda;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class Person {
 	private int pId; 
-	private String pName;
-	public Person() {}
-	
-	public Person(int pId, String pName) {
-		super();
-		this.pId = pId;
-		this.pName = pName;
-	}
-
-	@Override
-	public String toString() {
-		return "Person [pId=" + pId + ", pName=" + pName + "]";
-	}
-
-	public int getpId() {
-		return pId;
-	}
-
-	public void setpId(int pId) {
-		this.pId = pId;
-	}
-
-	public String getpName() {
-		return pName;
-	}
-
-	public void setpName(String pName) {
-		this.pName = pName;
-	} 
-	
+	private String pName;	
 }
