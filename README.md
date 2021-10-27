@@ -1084,3 +1084,35 @@ will generate:
  public class LogExample {
      private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(LogExample.class);
  }
+
+
+ ----------------------
+
+
+ # Day 6 
+
+ - Assessment 
+   - bitbucket https://tools.publicis.sapient.com/bitbucket/scm/poatb/assessment-1.git
+   1. - git clone https://tools.publicis.sapient.com/bitbucket/scm/poatb/assessment-1.git
+   2. git checkout main 
+   3. git branch LLID-FIRSTNAME syntax, ex: git branch mankakka-manav, git branch panawasti-pankhuri
+   4. git checkout mankakka-manav
+   5. git branch 
+   6. start writing the code 
+   7. repeat git add ., git commit -m "assessment-1 submission by manav"
+   8. git push origin mankakka-manav
+1. Coding style 
+   1. /** @author manav @see to insert record  */ 
+   2. good naming conventions 
+
+
+T1 - RONAK, MANAV - Amit 
+T2 - AMIT, AAKASH - Ashotosh
+T3 - ASHUTOSH, RISHAB - Pankhuri
+T4 - PANKHURI, ARJUN - Arti 
+T5 - ARTI, MAYURESH - Srishti 
+T6 - SRISHTI, HEMANTH - Sajid 
+T7 - SAJID, LOKESH - Utkash 
+T8 - UTKARSH, YOGESH - Bhavya 
+T9 - BHAVYA, VISHAV, SHIVANAND -Ronak 
+
