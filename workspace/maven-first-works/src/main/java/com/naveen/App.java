@@ -1,6 +1,12 @@
 package com.naveen;
 
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Vector;
+
 import org.slf4j.Logger; 
 
 
@@ -20,5 +26,6 @@ public class App {
 		
 		String name = "Sapient"; 
 		logger.debug("some values {}", name);
+		
 	}
 }

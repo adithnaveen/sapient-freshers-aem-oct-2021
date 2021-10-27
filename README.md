@@ -1116,3 +1116,175 @@ T7 - SAJID, LOKESH - Utkash
 T8 - UTKARSH, YOGESH - Bhavya 
 T9 - BHAVYA, VISHAV, SHIVANAND -Ronak 
 
+
+
+{12.50=[Product 
+            [name=marker, qty=133, price=12.50]
+        ], 
+23000.67=[Product 
+            [name=laptop, qty=11, price=23000.67]
+          ], 
+65000.00=[Product 
+            [
+                name=laptop, qty=33, price=65000.00]
+            ], 
+3.67=[Product 
+            [
+                name=tag, qty=30, price=3.67
+            ], 
+    
+    Product 
+        [name=paper, qty=32, price=3.67], 
+    Product 
+        [name=paper, qty=32, price=3.67]
+    ], 
+19.99=[Product 
+    [
+        name=marker, qty=21, price=19.99
+        ]
+    ]
+}
+
+----------------
+{12.50=[Product [name=marker, qty=133, price=12.50]], 23000.67=[Product [name=laptop, qty=11, price=23000.67]], 65000.00=[Product [name=laptop, qty=33, price=65000.00]], 3.67=[Product [name=tag, qty=30, price=3.67], Product [name=paper, qty=32, price=3.67]], 19.99=[Product [name=marker, qty=21, price=19.99]]}
+
+
+------------------------ anonymous block vs named block vs lambda ------------------------------ 
+
+```
+1. 
+@Data 
+class Employee implements Comparable<Employee>{
+    private int empId;
+    private String empName; 
+
+    public void compareTo(Object obj) {
+        // lexographical check  
+    }
+
+}
+
+class App {
+    psvm() {
+        new TreeSet<Employee>();
+    }
+
+}
+
+
+2. @Data 
+class Employee{
+    private int empId;
+    private String empName; 
+}
+
+// named way 
+class EmployeeSorterTemplate{
+    public List<Employee> sortAscByName(List<Employee> list) {
+        Comparare<Employee> compare = new Compare<Employee>() {
+
+            @Overrident
+            public void compare(Employee e1, Employee e2) {
+                    // you lexographical check 
+            }   
+        };
+
+        Collections.sort(list, compare); 
+
+    }
+}
+
+
+
+3. @Data 
+class Employee{
+    private int empId;
+    private String empName; 
+}
+
+// un-named way 
+class EmployeeSorterTemplate{
+    public List<Employee> sortAscByName(List<Employee> list) {
+        Collections.sort(list, new Compare<Employee>() {
+
+            @Overrident
+            public void compare(Employee e1, Employee e2) {
+                    // you lexographical check 
+            }   
+        }); 
+
+    }
+}
+
+4. 
+// un-named way 
+class EmployeeSorterTemplate{
+    public List<Employee> sortAscByName(List<Employee> list) {
+        Collections.sort(list,(Employee e1, Employee e2) ->  {
+                    // you lexographical check 
+        }); 
+
+    }
+}
+
+class App {
+    psvm() {
+        new TreeSet<Employee>();
+    }
+
+}
+
+
+```
+
+
+
+
+> LambdaEx01.class
+> LambdaEx01$1.class - 1. LambdaEx01 2. $1 - LambdaEx01$1$1.class - LambdaEx01$1$2.class
+> LambdaEx01$2.class - 1. LambdaEx01 2. $2
+
+
+
+
+-- HashMap 
+    public V put(K key, V value) {
+        return putVal(hash(key), key, value, false, true);
+    }
+-- HasTable 
+    Account.balance = 1000;  - 10:00:00:00, - 10:00:00:01   -> if i allow get operation its okay, but should not withdraw again 
+    public synchronize  void withDraw(Account account, Long amount) {
+        if(amount < account.balance) {
+            //process 
+            /// the DB call is made - 500 ms 
+            // updating the data - 500 ms 
+            // confirming - 100 ms (total 1100ms)
+        }
+    }
+
+     public synchronized V put(K key, V value) {
+         ...
+     }
+
+
+-- list 
+ private void add(E e, Object[] elementData, int s) {
+        if (s == elementData.length)
+            elementData = grow();
+        elementData[s] = e;
+        size = s + 1;
+    }
+-vector 
+     public synchronized void addElement(E obj) {
+        modCount++;
+        add(obj, elementData, elementCount);
+    }
+
+
+A - Atomiticy 
+C - Consitencey
+I - Isolation 
+D - Durability 
+
+
+
