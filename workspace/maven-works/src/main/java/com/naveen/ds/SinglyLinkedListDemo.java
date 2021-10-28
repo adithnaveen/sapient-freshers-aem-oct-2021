@@ -11,5 +11,15 @@ public class SinglyLinkedListDemo {
 		System.out.println(list);
 		list.addLast("Lokesh");
 		System.out.println(list);
+		
+		list.displayAll();
+		
+		System.out.println("Remove last ---------");
+		System.out.println(list.removeLast());  
+
+		System.out.println("------------------");
+		list.displayAll();
+		
+		
 	}
 }

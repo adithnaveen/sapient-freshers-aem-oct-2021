@@ -93,12 +93,40 @@ public class SinglyLinkedList<E> {
 	}
 	
 	public E removeLast() {
-		return null; 
+		if(isEmpty()) {
+			System.out.println("There is nothing to remove");
+			return null; 
+		}else if(size ==1) {
+			Node<E> temp = head; 
+			head = tail = null; 
+			size =0;
+			return temp.getValue(); 
+		}else {
+			Node<E> current = head; 
+			for(int i=0; i<size -2; i++) {
+				current = current.getNext(); 
+			}
+			Node<E> temp = tail; 
+			tail = current; 
+			tail.setNext(null);
+			size --; 
+			return temp.getValue(); 
+
+		}
 	}
 	
 	
 	public void displayAll() {
-		
+		if(isEmpty()) {
+			System.out.println("Nothing to display");
+		}else {
+			Node<E> temp = head; 
+			
+			do {
+				System.out.println(temp.getValue());
+				temp = temp.getNext();
+			}while(temp!=null); 
+		}
 	}
 	
 
