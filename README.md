@@ -1236,10 +1236,7 @@ class App {
 
 
 ```
-
-
-
-
+ 
 > LambdaEx01.class
 > LambdaEx01$1.class - 1. LambdaEx01 2. $1 - LambdaEx01$1$1.class - LambdaEx01$1$2.class
 > LambdaEx01$2.class - 1. LambdaEx01 2. $2
@@ -1285,6 +1282,173 @@ A - Atomiticy
 C - Consitencey
 I - Isolation 
 D - Durability 
+
+
+
+
+----- 
+# Day 7 
+
+---- 
+
+T1 - RONAK, MANAV - Amit 
+    - discussed about case study 
+    - 
+T2 - AMIT, AAKASH - Ashotosh
+    - 
+T3 - ASHUTOSH, RISHAB - Pankhuri
+T4 - PANKHURI, ARJUN - Arti 
+T5 - ARTI, MAYURESH - Srishti 
+T6 - SRISHTI, HEMANTH - Sajid 
+T7 - SAJID, LOKESH - Utkash 
+T8 - UTKARSH, YOGESH - Bhavya 
+T9 - BHAVYA, VISHAV, SHIVANAND -Ronak 
+
+Basic overview of data structures - List, Map, Graph
+Mutable vs Immutable, Iterating over Data Structures
+Basic Search Algorithms - Binary, Quick, Merge : pros/cons
+Understanding how to identify Time Complexity 
+Choosing appropriate DS and Algo for Problem
+
+
+|-------|---------|
+| Algorithm                                               | Program                               |
+| ------------------------------------------------------- | ------------------------------------- |
+| Design                                                  | Implementation                        |
+| step by step procedure to define given problem statment | Implemenation of an algoritm          |
+| Domain Knowledge                                        | programming knowledge                 |
+| any language                                            | specific language                     |
+| dont worry about OS or H/W                              | worry about OS or H/W                 |
+| design                                                  | implement + test                      |
+| which takes an input and gives output                   | which takes an input and gives output |
+
+--- 
+
+
+| prior ananlysis                  | postiror analysis               |
+| -------------------------------- | ------------------------------- |
+| algorithm                        | program                         |
+| agnostic to programming language | language dependent              |
+| time and space complexity        | hardware (amout of data/ bytes) |
+| -------------------------------- | ------------------------------- |
+
+--- 
+
+
+
+- Effectiveness 
+``` 
+    public int largeTwo(int num1, int num2) {
+        if(num1 > num2) {
+            return num1 
+        }else {
+            return num2; 
+        }
+    }
+    --- 
+
+    public int largeTwo(int num1, int num2) {
+        if(num1 > num2) {
+            return num1 
+        }
+            return num2; 
+        
+    }
+
+    public int largeTwo(int num1, int num2) {
+        return num1 > num2?num1:num2;
+    }
+
+    public int largeThree(int num1, int num2, int num3) {
+        return num1>num2&&num1>num3?num1:num2>num3?num2:num3;
+    }
+```
+
+
+- chararectistics of algorithm 
+  - input - 0 or 1 or more 
+  - output - atleast 1 
+  - definiteness - if you can solve your computer should solve 
+  - finiteness- surity of output, number of steps / duration (never web server / db server)
+  - effectiveness - every statement should be effectived 
+
+- how do you measure/analyze your algorithm 
+  - time complexity - BigO notation / is for piece of code which may be converted in to program 
+    - Network complexity - 5g edge computing 
+    - Power - mobile / laptops 
+    - CPU Registers - Device Driver applications 
+  - space complexity 
+
+
+
+- Anti Pattern 
+- SOLID 
+
+
+int *p = (*int) malloc(100); 
+// do something 
+free(p)
+
+
+// to solve dictionary 
+- list 
+- set 
+- map
+  - hash - OLTP
+  - tree - OLAP
+
+
+
+
+- For writing algoritm you need have knowlege about OS, Processor how it works etc 
+
+// ms, s, m, h, d, m-ms, 
+for(int i=0; i<10; i++) {
+    // do something 
+}
+
+
+
+-- to calculate time complextity 
+
+> for(i=0; i<n; i++) = O(n)
+> for(i=0; i<n; i+=2) = O(n)
+> for(i=n; i>0; i--) = O(n)
+> for(i=1; i<n; i*=2) = O(log 2 n) 
+> for(i=1; i<n; i*=3) = O(log 3 n) 
+> for(i=1; i<n; i*=4) = O(log 4 n) 
+> for (i=n ;i > 0 ; i=i/2) = O(log 2 n)
+
+
+
+singly linked list 
+
+  - SinglyLinkedList 
+      [head=Node 
+          [value=Arti, next=null], 
+      tail=Node 
+          [value=Arti, next=null], 
+      size=1]
+
+SinglyLinkedList 
+    [head=Node 
+        [value=Bhavya, next=Node 
+        [value=Arti, next=null]
+        ], 
+    tail=Node 
+        [value=Arti, next=null], 
+    size=2
+    ]
+
+SinglyLinkedList 
+    [head=Node 
+        [value=Bhavya, next=Node 
+        [value=Arti, next=Node 
+        [value=Lokesh, next=null]]], 
+    tail=Node 
+        [value=Lokesh, next=null], 
+    size=3
+    ]
 
 
 

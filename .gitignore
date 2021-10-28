@@ -4,5 +4,6 @@ documents
 *.classpath
 *.project
 workspace/.sonarlint/**
+workspace/maven-works/target/** 
 
  
