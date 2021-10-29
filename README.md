@@ -1461,7 +1461,6 @@ SinglyLinkedList
 
 ----- 
 # Day 8 
-
 ---- 
 
 T1 - RONAK, MANAV - Amit 
@@ -1475,11 +1474,10 @@ T5 - ARTI, MAYURESH - Srishti
 T6 - SRISHTI, HEMANTH - Sajid 
 T7 - SAJID, LOKESH - Utkash 
 T8 - UTKARSH, YOGESH - Bhavya 
-T9 - BHAVYA, VISHAV, SHIVANAND -Ronak 
+T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
 
 
 Problem Statement 
-
 
 - Registration 
   - username (pk)
@@ -1558,6 +1556,17 @@ Algorithm (ListA, ListB, m, n) {
     }
     for(; j<=n; j++) {
         ListC[k++] = ListB[j]
+    }
+}
+
+
+
+Algorithm MergeSort (l, h) {
+    if(l<h) {
+        mid = (l + h)  / 2  - 8 , 4, 2 
+        MergeSort(l, mid)
+        MergeSort(mid+1, h)
+        Merge(ListA  l, mid, h)
     }
 }
 
