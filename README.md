@@ -1510,3 +1510,55 @@ Problem Statement
   - address 
   - mode of payment 
   - payment-successfull 
+
+
+
+interface ILoginService {
+    public boolean loginValidate(Login  login);
+    public void checkExpiryOfLogin(Login login)
+}
+
+class LoginService implements ILoginService {
+    public boolean loginValidate(Login  login) {
+        // some logic 
+    }
+
+    public void checkExpiryOfLogin(Login login) {
+        // some logic 
+    }
+}
+ 
+class LoginServiceDb implements ILoginService {
+    public boolean loginValidate(Login  login){}
+    public void checkExpiryOfLogin(Login login){}
+}
+
+
+Basic overview of data structures - List, Map, Graph
+Mutable vs Immutable, Iterating over Data Structures
+Basic Search Algorithms - Binary, Quick, Merge : pros/cons
+Understanding how to identify Time Complexity 
+Choosing appropriate DS and Algo for Problem
+
+
+Merge
+
+Algorithm (ListA, ListB, m, n) {
+    i=1, j=1, k=1
+    while(i<=m && j<=n) {
+        if(A[i] < B[j]) {
+            ListC[k++] = ListA[i++]
+        }else {
+            ListC[k++] = ListB[j++]
+        }
+    }
+
+    for(; i<=m; i++) {
+        ListC[k++] = ListA[i]
+    }
+    for(; j<=n; j++) {
+        ListC[k++] = ListB[j]
+    }
+}
+
+
