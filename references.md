@@ -4,6 +4,9 @@
 ## Bit O Notation
 > https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity
 
+## Data Structures Text Book 
+> http://bedford-computing.co.uk/learning/wp-content/uploads/2016/08/Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf
+
 ## Java certifications 
 > http://www.maamu.itgo.com/other/javaquiz1.htm
 
