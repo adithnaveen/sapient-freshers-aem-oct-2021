@@ -29,6 +29,10 @@ public class Util {
 	}
 	
 	
+	public static void main(String[] args) {
+		getStorageFileName();
+	}
+	
 	
 	public static boolean emailPatternMathcing(String emailAddress, String regexPattern) {
 	    return Pattern.compile(regexPattern)

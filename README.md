@@ -1571,3 +1571,57 @@ Algorithm MergeSort (l, h) {
 }
 
 
+
+## Project Statement 
+-  Practices 
+   -  You have write developer documenation  
+   -  to create a branch and then code and merge before than you have to raise the PR 
+   -  make the application as cohesive as posissble 
+   -  user Reader / Writer Classes 
+   -  check if you can use properties files for getting details like 
+      -  Company Name 
+      -  Company Address 
+      -  etc... 
+-  output 
+-  the application is CLI 
+   -  Options
+   -  1. Registration 
+   -  2. Login 
+   -  choose option : 1 
+      -  welcome to registration 
+         -  Enter useraname: ...... (but validate that the same username does not exist)
+         -  Enter password:.......  
+         -  Confirm Password: ..........
+         -  Enter Email: ..... (validate the email ex: name@something.com - format to be validate)
+         -  <Enter>
+      -  if data goes well then save the record into th file and given Ack 
+         -  CONGRATS USER CREATED: username 
+      -  if there is an error show appropriate error message 
+   -  Choose Option: 2 
+      -  Enter user username : username <username> <enter>
+      -  Enter password : password <password> <enter>
+   -  based on the value which is passed validate and show appropriate message 
+   -  if fails then 
+      -  SORRY INVALID CREDENTIALS 
+   -  if good then 
+      -  Welcome User <Username> - Company Name : Sapient 
+      -  Items (10, press next, 11-20, )
+      -  ------------------- 
+        - 1. Pizza - INR: 100 
+        - 2. Idly - INR : 20 
+        - 3. Roti Curry - INR 30 
+        - ..... 
+      - Chooose below option 
+        - 1. Select the number to add to your cart (maintain a MAP<String, List<Item>>)
+        - 2. 0 to go back to home screen 
+        - 3. 99 View your cart 
+        - 4. 100 to checkout 
+ - When the demo is shown on monday 
+   - the code should be in .jar file 
+   - you have to execute like java -cp com.sapient.main 
+
+
+
+
+
+
