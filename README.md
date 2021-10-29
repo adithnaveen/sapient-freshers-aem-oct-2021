@@ -1455,3 +1455,58 @@ SinglyLinkedList
 
 
 
+
+
+
+
+----- 
+# Day 8 
+
+---- 
+
+T1 - RONAK, MANAV - Amit 
+    - discussed about case study 
+    - 
+T2 - AMIT, AAKASH - Ashotosh
+    - 
+T3 - ASHUTOSH, RISHAB - Pankhuri
+T4 - PANKHURI, ARJUN - Arti 
+T5 - ARTI, MAYURESH - Srishti 
+T6 - SRISHTI, HEMANTH - Sajid 
+T7 - SAJID, LOKESH - Utkash 
+T8 - UTKARSH, YOGESH - Bhavya 
+T9 - BHAVYA, VISHAV, SHIVANAND -Ronak 
+
+
+Problem Statement 
+
+
+- Registration 
+  - username (pk)
+  - password 
+  - confirm-password
+  - email 
+  - gender 
+- login 
+  - username (pk)
+  - password 
+- menu-item
+  - menu-item-id
+  - name 
+  - type 
+  - price 
+  - image-url 
+-cart 
+    -cart-id
+    - username 
+    - List<Menu-Items>
+      - Menuiitem-id 
+      - price
+      - qty 
+    - total-price of the cart 
+- confirmation-order 
+  - username 
+  - cart-id 
+  - address 
+  - mode of payment 
+  - payment-successfull 

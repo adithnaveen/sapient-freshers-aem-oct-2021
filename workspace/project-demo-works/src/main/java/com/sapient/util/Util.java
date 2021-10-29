@@ -3,8 +3,8 @@ package com.sapient.util;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 /**
  * 
@@ -26,5 +26,13 @@ public class Util {
 		}
 		
 		return null; 
+	}
+	
+	
+	
+	public static boolean emailPatternMathcing(String emailAddress, String regexPattern) {
+	    return Pattern.compile(regexPattern)
+	      .matcher(emailAddress)
+	      .matches();
 	}
 }

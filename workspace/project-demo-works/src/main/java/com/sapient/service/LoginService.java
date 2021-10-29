@@ -2,7 +2,9 @@ package com.sapient.service;
 
 import com.sapient.beans.Login;
 import com.sapient.dao.UserDAO;
+import com.sapient.exceptions.InvalidEmailException;
 import com.sapient.exceptions.NameTooShortException;
+import com.sapient.util.Util;
 
 /**
  * 
@@ -14,13 +16,21 @@ public class LoginService implements ILoginService {
 	
 	
 	public boolean validatLogin(Login login) 
-		throws NameTooShortException{
+		throws NameTooShortException, InvalidEmailException{
 		
 	// if you want to make any validation do it here 
 		if(login.getUserName().length()<6) {
 			throw new NameTooShortException("Sorry Name cannot be less than 6 chars" + login.getUserName()); 
 		}
-		dao.checkLogin(login); 
+		
+		 
+		// how do you validate email 
+		boolean flag = Util.emailPatternMathcing("sample@gmail.com", "^(.+)@(\\S+)$"); 
+		if(flag) {
+			dao.checkLogin(login); 
+		}else {
+			throw new InvalidEmailException("Invalid Email passed"); 
+		}
 		return false; 
 	}
 }

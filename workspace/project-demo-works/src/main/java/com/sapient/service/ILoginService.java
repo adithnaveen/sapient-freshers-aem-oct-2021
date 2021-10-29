@@ -1,10 +1,11 @@
 package com.sapient.service;
 
 import com.sapient.beans.Login;
+import com.sapient.exceptions.InvalidEmailException;
 import com.sapient.exceptions.NameTooShortException;
 
 public interface ILoginService {
 
-	boolean validatLogin(Login login) throws NameTooShortException;
+	boolean validatLogin(Login login) throws NameTooShortException, InvalidEmailException;
 
 }
