@@ -1821,7 +1821,8 @@ insert into restaurant1 values(101, 'Hotel Ashoka', 'Bengaluru', 'KA', 'ashoka@t
 > insert into fooditem  (itemname, price, description, restid) values ('Coffee', 125, 'Malnad Coffee', 101);
 > insert into fooditem  (itemname, price, description, restid) values ('Vada', 25, 'South Vada', 102);
 > insert into fooditem  (itemname, price, description, restid) values ('Idly', 12.50, 'Soft Idly', 102);
-
+> insert into fooditem  (itemname, price, description, restid) values ('Tea', 20, 'Good Tea', 102);
+> insert into fooditem  (itemname, price, description, restid) values ('Pizza', 300, 'Italian Pizza', 106);
 
 
 select 
@@ -1845,3 +1846,67 @@ select r.*, f.price
     where 
         r.rid = f.restid; 
 
+
+> list all the restaurants who sell tea and price is less than 50
+    ```select r.rname, f.itemname from 
+        restaurant r, fooditem f 
+        where r.rid = f.restid 
+        and f.price < 50
+        and f.itemname like '%Tea%';
+        
+        ```
+
+> List all the dishes available in Bengaluru
+    select f.itemname 
+        from restaurant r, fooditem f 
+        where r.rid = f.restid 
+        and r.city = 'Bengaluru';
+
+> list the dishes in the restaurant who's phone number does not exists 
+> insert into fooditem  (itemname, price, description, restid) values ('Pizza', 300, 'Italian Pizza', 106);
+      select f.itemname as ItemName
+        from restaurant r, fooditem f 
+        where r.rid = f.restid 
+        and r.phone is null; 
+
+
+Select Statement Syntax 
+    Select 
+        column1, column2,... columnn
+        from table1, table2, ... table n 
+        where clause 1 and / or clause 2 and / or clause 2  -- table level filtering 
+        group by field 
+        having  clause 1, clause 2 
+        order by column1, column2,... columnn asc / desc; 
+
+
+- aggregate function s
+  - min 
+  - max
+  - avg
+  - count 
+  - sum 
+  - 
+
+
+-- list the restaurants and the number of items they sell 
+    select min(f.price) as 'Min Price', max(f.price) as 'Max Price', count(f.itemname) 'Count', r.rname
+        from restaurant r, fooditem f
+        where r.rid = f.restid
+        group by r.rname
+        having count(*) > 1; 
+
+-- list the dishes in shanti sagar where the price of the dish it more than the average price of all the items 
+
+
+select f.itemname, r.rid from fooditem f, restaurant r 
+    where r.rname= 'Shanti Sagar'  and 
+    r.rid = f.restid 
+    and f.price > (select avg(price) from fooditem where restid=r.rid); 
+
+
+
+select f.itemname from fooditem f, restaurant r 
+    where r.rname= 'Shanti Sagar'  and 
+    r.rid = f.restid 
+    and f.price > 19.6;
