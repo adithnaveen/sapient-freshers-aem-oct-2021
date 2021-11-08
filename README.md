@@ -1625,3 +1625,223 @@ Algorithm MergeSort (l, h) {
 
 
 
+
+----- 
+# Day 9 
+---- 
+T1 - RONAK, MANAV - Amit 
+    - discussed about case study 
+    - couldnt show the code, since it was not seeded the src code are in diff systems 
+T2 - AMIT, AAKASH - Ashotosh
+    - showed the demo 
+    - created jar file 
+T3 - ASHUTOSH, RISHAB - Pankhuri
+    - couldn't show the demo there were exceptions 
+    - pankhuri  did not check the code / progress 
+T4 - PANKHURI, ARJUN - Arti 
+    - Arjun is absent so couldnt do it 
+    - arti did not check the code / progress 
+T5 - ARTI, MAYURESH - Srishti 
+    -  shown demo with eclipse 
+    -  the flow was good and shown the items added to cart 
+    -  showed up to payment, and accepted amount as ack 
+T6 - SRISHTI, HEMANTH - Sajid 
+    - showed the demo, was on eclipse 
+    - proper error messages were not shown 
+    - the application went upto confir order 
+    - basic validation is done 
+T7 - SAJID, LOKESH - Utkash 
+    - coudlnt present 
+T8 - UTKARSH, YOGESH - Bhavya 
+    - demo shown in eclipse 
+    - generate cart id randomly 
+    - application went upto payment page and bill was generated 
+    - and discount was generated upto 100 
+    - code should have be more matured like handling the case: 
+T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
+    - showed demo on eclipse 
+    - basic validation is taken care 
+    - the .txt file should not have the keys UserName: 
+    - application went up payment 
+
+
+
+
+
+MySQL-DBMS	
+- Introduction to RDBMS
+Overview of Database Models
+Overview of ER Diagram and Normalization
+Introduction to SQL,Data types
+Introduction to DQL, DDL, DML, DCL
+    - DDL - Create, Drop, Truncate, Alter
+      - once use the data is changed and it cannot be undone 
+    - DML - insert, update, delete 
+    - DQL - Select 
+      - grouping having etc 
+    - TCL - savepoint, commit, rollback 
+    - DCL - grant, revoke 
+INSERT/UPDATE/DELETE/RETRIEVE
+Using functions and ordering the result 
+Average(), Count(), Maximum(), Median(), Minimum(),  Sum() 
+Group By, Order By, Having 
+Use of LIKE & WHERE clause 
+Dropping / truncating a table
+SQL Joins - Inner, Outer and Self joins"	
+
+
+
+- 1945 - ENIAC 
+  - Languages Ist  - MC 
+  - C, C++, cobol, pascal.... How to do language 
+  - 1972 - EF CODD - IBM - SQL - What to do language 
+    - DB2 - Postgres, mysql, oracle, db derby, sqlite etc 
+```
+    If it is C 
+    FILE *ptr; 
+    ptr = fopen("somefile.txt"); 
+    ... 
+    ptr.close();
+```
+
+    select * from employee; 
+
+  - DBMS - DB2 - Postgres, mysql, oracle, db derby, sqlite etc 
+    - MS - Management System 
+      - A - Atomicity 
+      - C - Consistency 
+      - I - Isolation 
+      - D - Durability 
+      - TOAD 
+      - Normalization 
+        - Ist Normal Form - The data should be there 
+        - 2nd Normal Form - all attributes should be dependent on single attribute 
+          - PK - Not Null + Unique 
+        - 3rd Normal Form - avoid to have transitive dependencies 
+        - 4th Normal Form - BCNF - Alsmos not used 
+        - 5th Normal Form - not in use 
+        - 6th Normal Form - not in use
+      - Data Consitency 
+        - Primary key 
+        - not null 
+        - unique 
+        - Foreign key 
+        - check 
+        - 
+  - DB - Mongodb, dynamod, cauchdb, redisdb.... 
+  -  
+- 2021 - Smart Phone / AI / ML 
+
+
+
+
+
+> mysql -u root -p
+> show databases 
+> create database sap_aem
+> use sap_aem
+> show tables;
+
+``` 
+create table restaurant(
+    rid int(4) primary key, 
+    rname varchar(20) not null, 
+    city varchar(30) not null, 
+    statement char(2) not null, 
+    email varchar(50)
+);
+```
+> desc restaurant 
+-- put some records in restaurant table 
+
+> insert into restaurant values(101, 'Hotel Ashoka', 'Bengaluru', 'KA', 'ashoka@test.com');
+> insert into restaurant values(102, 'Shanti Sagar', 'Mangaluru', 'KA', 'shanti@hello.com');
+> insert into restaurant values(103, 'Halli Mane', 'Chennai', 'TN', 'halli@test.com');
+> insert into restaurant values(104, 'Pavitra Hotel', 'Hydarabad', 'TS', 'pavitra@test.com');
+> insert into restaurant values(105, 'Leela Palace', 'Delhi', 'DL', 'leela@test.com');
+
+> get all records 
+> select * from restaurant 
+ alter 
+> add  
+>   - alter table restaurant add phone varchar(15); 
+>   - alter table restaurant add email varchar(40);
+> modify - alter table restaurant modify phone varchar(20); 
+> remove  - alter table restaurant drop email; 
+> rename - alter table restaurant rename column statement to  state;
+
+- Update 
+  - update restaurant set phone='9900990099', email='ashoka@gmail.com'; 
+  - update restaurant set phone='8877665544', email='shanti@test.com' where rid=102;
+  - update restaurant set phone='7878787878', email='halli@test.com' where rid=103;
+  - update restaurant set phone='9898989898', email='pavitra@test.com' where rid=104;
+  - update restaurant set phone='2356898798', email='leela@test.com' where rid=105;
+
+
+- select 
+  - select * from restaurant where email like  '%test.com';
+
+``` 
+create table restaurant1(
+    rid int(4) primary key, 
+    rname varchar(20) not null, 
+    city varchar(30) not null, 
+    statement char(2) not null, 
+    email varchar(50)
+);
+```
+insert into restaurant1 values(101, 'Hotel Ashoka', 'Bengaluru', 'KA', 'ashoka@test.com');
+
+
+ to enable and disable auto commit 
+ > set autocommit=false;
+ > set autocommit=true;
+
+ > commit 
+ > insert into restaurant (rid, rname, city, state) values(106, 'Green Valley', 'Mysuru', 'KA');
+ > savepoint point1; 
+ > update restaurant set phone='1122334455' where rid = 106; 
+ > savepoint point2; 
+ > rollback point1;
+
+ > truncate command will remove the content & you will not be able to rollback & does not take conditions 
+
+```
+    create table fooditem (
+        itemid int primary key auto_increment, 
+        itemname varchar(50), 
+        price decimal (7,2), 
+        description varchar(100), 
+        restid int(4), 
+        foreign key (restid) references restaurant (rid)
+    );
+```
+
+> insert into fooditem  (itemname, price, description, restid) values ('Tea', 123, 'Fine Tea', 101);
+> insert into fooditem  (itemname, price, description, restid) values ('Coffee', 125, 'Malnad Coffee', 101);
+> insert into fooditem  (itemname, price, description, restid) values ('Vada', 25, 'South Vada', 102);
+> insert into fooditem  (itemname, price, description, restid) values ('Idly', 12.50, 'Soft Idly', 102);
+
+
+
+select 
+    r.email, r.phone, f.price, f.itemname
+    from restaurant r, fooditem f
+    where 
+        f.description like '%Coffee%' and 
+        r.rid = f.restid; 
+
+
+select 
+    r.email, r.phone, f.price, f.itemname
+    from restaurant r, fooditem f
+    where 
+        r.rid = f.restid; 
+
+
+
+select r.*, f.price
+    from restaurant r, fooditem f
+    where 
+        r.rid = f.restid; 
+
