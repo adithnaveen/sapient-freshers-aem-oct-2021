@@ -1975,3 +1975,8 @@ Steps
 - Execute 
 - process 
 - close 
+
+
+- Indexes Start from 0 
+- Result Set start from -1 
+- Place holders start from 1 

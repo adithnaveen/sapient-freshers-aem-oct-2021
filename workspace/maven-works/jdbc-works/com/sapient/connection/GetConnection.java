@@ -4,9 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class GetConnection {
-	private Connection connection; 
-	public Connection getMysql() {
+	private static  Connection connection; 
+	public static  Connection getMysql() {
 		// you are loading the connection 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -27,5 +30,7 @@ public class GetConnection {
 	}
 	
 	// other databases to connect 
+	
+
 	
 }
