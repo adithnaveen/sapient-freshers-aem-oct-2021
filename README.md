@@ -1645,9 +1645,9 @@ T5 - ARTI, MAYURESH - Srishti
     -  shown demo with eclipse 
     -  the flow was good and shown the items added to cart 
     -  showed up to payment, and accepted amount as ack 
-T6 - SRISHTI, HEMANTH - Sajid 
+T6 - SRISHTI, HEMANTH, SWATI - Sajid 
     - showed the demo, was on eclipse 
-    - proper error messages were not shown 
+    - proper erroer messages were not shown 
     - the application went upto confir order 
     - basic validation is done 
 T7 - SAJID, LOKESH - Utkash 
@@ -1661,7 +1661,7 @@ T8 - UTKARSH, YOGESH - Bhavya
 T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
     - showed demo on eclipse 
     - basic validation is taken care 
-    - the .txt file should not have the keys UserName: 
+    - the .txt file should not hav the keys UserName: 
     - application went up payment 
 
 
@@ -1886,7 +1886,7 @@ Select Statement Syntax
   - avg
   - count 
   - sum 
-  - 
+  
 
 
 -- list the restaurants and the number of items they sell 
@@ -1910,3 +1910,68 @@ select f.itemname from fooditem f, restaurant r
     where r.rname= 'Shanti Sagar'  and 
     r.rid = f.restid 
     and f.price > 19.6;
+
+ 
+
+select f.itemname, r.rid 
+    from fooditem f, restaurant r 
+    where r.rname= 'Shanti Sagar'  and  -- will give 1 record -> 102
+    r.rid = f.restid 
+    and f.price > (select avg(price) from fooditem where restid=r.rid); 
+
+select avg(price) from fooditem where restid=???? 
+
+ 
+
+
+
+----- 
+# Day 10 
+---- 
+## Sql 
+T1 - RONAK, MANAV - 10
+T2 - AMIT, AAKASH - 2
+T3 - ASHUTOSH, RISHAB, Lokesh - 10
+T6 - SRISHTI, HEMANTH, PANKHURI, Swati- 13 
+T8 - YOGESH, ARTI - 8 
+T9 - BHAVYA, VISHAV, SHIVANAND - 12
+
+
+JDBC, Junit	
+
+"Working with JUnit 5 
+Creating Testcases
+JUnit 5 Annotations
+JUnit Assertions
+Assumptions
+Using @Test in Junit5 
+Using Annotations - @BeforeAll and @AfterAll 
+TestFixtures with @BeforeEach and @AfterEach
+Testing Exceptions using assertThrows"	"Overview of Mockito and mock objects
+Using Mockito API
+Adding mockito to a project
+Creating mock objects using @Mock Annotation
+Configuring mock objects 
+Dependency Injection using @InjectMocks
+Adding behaviour
+Verify the behaviour using verify()
+
+Performing CRUD operations with MYSQL"
+
+
+
+JDBC
+- Drivers 
+  - Type1  - First 1995, JDBC-ODBC Bridge Driver (Dependent On OS)
+  - Type2  - Native DB Driver 
+  - Type3 - pure java driver, but middle tier 
+  - Type4 - pure java driver 
+
+List l = new ArrayList(); - mysql 
+l = new Vector(); - oracle 
+
+Steps 
+- Open 
+- Execute 
+- process 
+- close 
