@@ -24,7 +24,14 @@ public class RestaurantApp {
 //		log.info("{}", flag?"Record Inserted":"Not Inserted");
 		
 		
-		dao.updateRestaurant(101, "ashoka_new@gmail.com");
+//		dao.updateRestaurant(101, "ashoka_new@gmail.com");
+	
+//		dao.deleteRestaurant(108);
+		// get record 
+//		Restaurant restaurant = dao.getRestaurant(101);
+//		log.info("{}", restaurant);
+		
+		dao.getAllRestaurants().forEach(System.out :: println);
 		
 	}
 }
