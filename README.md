@@ -1,4 +1,4 @@
-# JAVA Batch  AEM  2021 October 
+    # JAVA Batch  AEM  2021 October 
 
   
 - Rishabh - Btech electrical, bikaner, playing cricket, - watching movies - 6 /10 
@@ -2097,3 +2097,101 @@ Stirng ret = sayHi("Harry");
 Hi Harry 
 
 ```
+
+
+
+```
+package com.srishti; 
+    class Hello {
+        static void hi() {}
+    }
+
+
+
+-----------------
+
+import static com.srishti.Hello.*;
+
+    class Myclass {
+        bye() {
+            hi();
+        }
+    }
+    
+```
+
+
+JEE	
+
+"What are servlets
+Coding issues, ServletResponse, ServletRequest etc…, Servlet life cycle
+Servlet used as the middle tier in a three tier architecture
+Single-Thread Model, Database connectivity through Servlet 
+Using Persistent Connections, Passing parameters to a Servlet, Servlet to Servlet Communication, Server-Side Includes, Redirecting requests, Client Pull
+Request Headers,Response Headers, Logging, Reporting Exceptions, Servlet Chaining
+Forwarding and Including Requests
+Servlets receiving information from HTML forms and responding to the client
+Session Tracking
+Session Object & Session Binding Events, Cookies , URL Rewriting, Hidden Fields, understanding Status Code "	
+
+
+
+- GET  Request 
+https://www.msn.com/en-in/news/newsindia/delhi-hc-dismisses-cbi-plea-in-inx-media-case-involving-p-chidambaram
+    /ar-AAQwEOX?li=AAggbRN
+
+- POST Request 
+https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1636525294&rver=7.0.6730.0&wp=LBI&wreply=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fSecure%2fPassport%3fru%3dhttps%253a%252f%252fwww.msn.com%252fen-in%252fnews%252fnewsindia%252fdelhi-hc-dismisses-cbi-plea-in-inx-media-case-involving-p-chidambaram%252far-AAQwEOX%253fli%253dAAggbRN%2526pfr%253d1&lc=1033&id=1184&mkt=en-in&pcexp=True
+
+
+
+
+> Protocols 
+  -  HTTP 1.0 - Stateful protocol 
+  -  HTTP 1.1 - Stateless Protocol 
+  -  HTTP 2.0 - 
+
+
+
+URL - is something which comes from outside  
+URI - internal redirections 
+
+
+class - com.naveen.servlet.HelloWorld 
+url - /hello 
+```
+hold server information 
+<servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.naveen.servlet.HelloWorld</servlet-class>
+</servlet>
+
+client information 
+<servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+</servlet-mapping>
+
+```
+
+
+-html content 
+```
+    <html>
+        <body>
+            <h1> Hello</h1>
+        </body>
+    </html>
+```
+
+
+
+
+http://localhost:8080/web-works/multiply?val=12
+
+http://localhost:8080/web-works/multiply
+
+
+
+
+

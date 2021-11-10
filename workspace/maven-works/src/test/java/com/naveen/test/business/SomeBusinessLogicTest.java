@@ -2,6 +2,9 @@ package com.naveen.test.business;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,6 +17,21 @@ class SomeBusinessLogicTest {
 	void setUp() {
 		System.out.println("i'm in BeforeEach");
 		 sbl = new SomeBusinessLogic(); 
+	}
+	@AfterEach
+	void tearDown() {
+		System.out.println(" in tear down");
+	}
+	
+	
+	@BeforeAll
+	static void setUpBeforeClass() {
+		System.out.println("once per class setUpBeforeClass()" );
+	}
+	
+	@AfterAll
+	static void tearDownAfterClass() {
+		System.out.println("once per class - tearDownAfterClass()");
 	}
 	
 	@Test
