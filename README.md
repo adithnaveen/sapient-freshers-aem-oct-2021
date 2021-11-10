@@ -1960,7 +1960,7 @@ Performing CRUD operations with MYSQL"
 
 
 
-JDBC
+### JDBC
 - Drivers 
   - Type1  - First 1995, JDBC-ODBC Bridge Driver (Dependent On OS)
   - Type2  - Native DB Driver 
@@ -1980,3 +1980,120 @@ Steps
 - Indexes Start from 0 
 - Result Set start from -1 
 - Place holders start from 1 
+ 
+ 
+----- 
+# Day 11
+---- 
+T1 - RONAK, MANAV - Amit 
+    - discussed about case study 
+    - couldnt show the code, since it was not seeded the src code are in diff systems 
+    - no progress from day 10 
+    - - need to work with JDBC 
+T2 - AMIT, AAKASH - Ashotosh
+    - showed the demo 
+    - created jar file 
+    - incorporated restaurant to project, and working on login and registration 
+T3 - ASHUTOSH, RISHAB - Pankhuri
+    - couldn't show the demo there were exceptions 
+    - pankhuri  did not check the code / progress 
+    - sanitzed the code without exception and working 
+    - need to work with JDBC, 
+T4 - PANKHURI, ARJUN - Arti 
+    - Arjun is absent so couldnt do it 
+    - arti did not check the code / progress 
+    - lombok had a problem  and pls ignore usage of lombok 
+    - working with JDBC but has some error 
+T5 - ARTI, MAYURESH - Srishti 
+    -  shown demo with eclipse 
+    -  the flow was good and shown the items added to cart 
+    -  showed up to payment, and accepted amount as ack 
+    -  working on JDBC connectivity 
+    -  working on login and registration there are few errors to be fixed 
+T6 - SRISHTI, HEMANTH, SWATI - Sajid 
+    - showed the demo, was on eclipse 
+    - proper erroer messages were not shown 
+    - the application went upto confir order 
+    - basic validation is done 
+    - Implementing JDBC, there is some exception 
+T7 - SAJID, LOKESH - Utkash 
+    - coudlnt present 
+    - login registration with IO 
+    - and working on JDBC, login registration
+    - need to complete the business logic with JDBC 
+T8 - UTKARSH, YOGESH - Bhavya 
+    - demo shown in eclipse 
+    - generate cart id randomly 
+    - application went upto payment page and bill was generated 
+    - and discount was generated upto 100 
+    - code should have be more matured like handling the case: 
+    - there is some error in reg part, it is in the file, need to work on validation 
+    - yogesh has created the tables, and need to connect with JDBC
+
+T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
+    - showed demo on eclipse 
+    - basic validation is taken care 
+    - the .txt file should not hav the keys UserName: 
+    - application went up payment 
+    - implementing JDBC 
+
+
+- XP - Extream Programming, more than 1 person 
+
+  Junit	
+
+Working with JUnit 5 - Jupiter 
+Creating Testcases
+JUnit 5 Annotations
+JUnit Assertions
+Assumptions
+Using @Test in Junit5 
+Using Annotations - @BeforeAll and @AfterAll 
+TestFixtures with @BeforeEach and @AfterEach
+Testing Exceptions using assertThrows"	
+
+
+"Overview of Mockito and mock objects
+Using Mockito API
+Adding mockito to a project
+Creating mock objects using @Mock Annotation
+Configuring mock objects 
+Dependency Injection using @InjectMocks
+Adding behaviour
+Verify the behaviour using verify()
+ 
+
+ CRUD - Create, Read, Update, Delete 
+
+
+BDD - Behavioural Driven Developement 
+
+Given 
+When 
+Then 
+And 
+But 
+
+Given the application is running on http://localhost:8080 
+When the page is loaded 
+And the clicked on the link "Login" which is on top right corner 
+Then the screen shows, asking for username and password 
+When entered valid user name 
+And password
+When clicked on "Submit" button
+Then the user is taken to home screen 
+
+
+```
+public String sayHi(String name) {
+    return "Hi " + name;
+}
+
+mocking 
+
+// to invoke 
+Stirng ret = sayHi("Harry"); 
+
+Hi Harry 
+
+```

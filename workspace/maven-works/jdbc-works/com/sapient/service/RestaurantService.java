@@ -19,7 +19,6 @@ public class RestaurantService implements IRestaurantService {
 	@Override
 	public boolean insertRestaurant(Restaurant restaurant) {
 		
-		
 		try {
 			// do a sanity check 
 			if(restaurant.getRName().length() < 6) {

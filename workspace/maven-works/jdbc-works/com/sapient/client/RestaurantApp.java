@@ -21,6 +21,9 @@ public class RestaurantApp {
 		IRestaurantDAO dao = new RestaurantDAO(); 
 //		boolean flag = dao.insertRestaurant
 //				(restaurant);
+		
+		long endTime = System.currentTimeMillis();
+
 //		log.info("{}", flag?"Record Inserted":"Not Inserted");
 		
 		
