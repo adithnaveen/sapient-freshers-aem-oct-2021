@@ -8,4 +8,4 @@ workspace/maven-works/target/**
 workspace/web-works/.settings/**
 workspace/Servers/**
 
- 
+**/target/** 
