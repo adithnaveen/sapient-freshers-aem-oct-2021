@@ -4,6 +4,9 @@ import com.naveen.beans.Registration;
 
 public class RegistrationService {
 	public boolean register(Registration reg) {
-		return false; 
+//		IRestaurantDAO res = new RestaurantDAO(); 
+//		res.getAllRestaurants(); 
+		System.out.println(reg.getUserName().length());
+		return reg.getUserName().length()>6;
 	}
 }

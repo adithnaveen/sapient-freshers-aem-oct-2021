@@ -2195,3 +2195,102 @@ http://localhost:8080/web-works/multiply
 
 
 
+
+----- 
+# Day 12
+---- 
+T1 - RONAK, MANAV - Amit 
+    - discussed about case study 
+    - couldnt show the code, since it was not seeded the src code are in diff systems 
+    - no progress from day 10 
+    - need to work with JDBC 
+    - working with JDBC 
+T2 - AMIT, AAKASH - Ashotosh
+    - showed the demo 
+    - created jar file 
+    - incorporated restaurant to project, and working on login and registration 
+    - tried implementing with servlet, had some errors 
+T3 - ASHUTOSH, RISHAB - Pankhuri
+    - couldn't show the demo there were exceptions 
+    - pankhuri  did not check the code / progress 
+    - sanitzed the code without exception and working 
+    - need to work with JDBC 
+    - working with JDBC, working with login registration 
+T4 - PANKHURI, ARJUN - Arti 
+    - Arjun is absent so couldnt do it 
+    - arti did not check the code / progress 
+    - lombok had a problem  and pls ignore usage of lombok 
+    - working with JDBC but has some error 
+    - completed login and reg with JDBC 
+    - need to work on servlets 
+T5 - ARTI, MAYURESH - Srishti 
+    -  shown demo with eclipse 
+    -  the flow was good and shown the items added to cart 
+    -  showed up to payment, and accepted amount as ack 
+    -  working on JDBC connectivity 
+    -  working on login and registration there are few errors to be fixed 
+    -  working on menu items, 
+    -  got started with servlets, working with simple forms 
+T6 - SRISHTI, HEMANTH, SWATI - Sajid 
+    - showed the demo, was on eclipse 
+    - proper erroer messages were not shown 
+    - the application went upto confir order 
+    - basic validation is done 
+    - Implementing JDBC, there is some exception 
+    - registration with servlets assignment 
+T7 - SAJID, LOKESH - Utkarsh 
+    - coudlnt present 
+    - login registration with IO 
+    - and working on JDBC, login registration
+    - need to complete the business logic with JDBC 
+    - login and registration is working, need to work on restaurant and other logics 
+    - need to implement with servlets 
+T8 - UTKARSH, YOGESH - Bhavya 
+    - demo shown in eclipse 
+    - generate cart id randomly 
+    - application went upto payment page and bill was generated 
+    - and discount was generated upto 100 
+    - code should have be more matured like handling the case: 
+    - there is some error in reg part, it is in the file, need to work on validation 
+    - yogesh has created the tables, and need to connect with JDBC
+    - recreated the schema, and got starterd with servlets 
+    - 
+T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
+    - showed demo on eclipse 
+    - basic validation is taken care 
+    - the .txt file should not hav the keys UserName: 
+    - application went up payment 
+    - implementing JDBC 
+    - working with servlets 
+    - 
+
+
+
+
+
+- invoking servlet file directly 
+- Testing with junit and mockito 
+- how to work with jdbc and servlet project 
+
+
+
+
+JEE	
+
+[x] What are servlets 
+[x]Coding issues, 
+ServletResponse, ServletRequest etc…, 
+Servlet life cycle
+Servlet used as the middle tier in a three tier architecture
+
+Single-Thread Model, Database connectivity through Servlet 
+Using Persistent Connections, Passing parameters to a Servlet, Servlet to Servlet Communication, Server-Side Includes, Redirecting requests, Client Pull
+Request Headers,Response Headers, Logging, Reporting Exceptions, Servlet Chaining
+Forwarding and Including Requests
+Servlets receiving information from HTML forms and responding to the client
+Session Tracking
+Session Object & Session Binding Events, Cookies , URL Rewriting, Hidden Fields, understanding Status Code "	
+
+
+
+
