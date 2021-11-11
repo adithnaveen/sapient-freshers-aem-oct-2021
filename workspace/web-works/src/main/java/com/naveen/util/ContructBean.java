@@ -19,7 +19,7 @@ public class ContructBean {
 		reg.setInterests(Arrays.asList(interests));  
 		reg.setQualification(request.getParameter("qual"));
 		
-		System.out.println(reg);
+		System.out.println("Company: "+request.getParameter("company"));
 		return reg;
 	}
 }

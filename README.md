@@ -2254,7 +2254,7 @@ T8 - UTKARSH, YOGESH - Bhavya
     - there is some error in reg part, it is in the file, need to work on validation 
     - yogesh has created the tables, and need to connect with JDBC
     - recreated the schema, and got starterd with servlets 
-    - 
+
 T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
     - showed demo on eclipse 
     - basic validation is taken care 
@@ -2262,7 +2262,7 @@ T9 - BHAVYA, VISHAV, SHIVANAND - Ronak
     - application went up payment 
     - implementing JDBC 
     - working with servlets 
-    - 
+
 
 
 
@@ -2277,20 +2277,65 @@ T9 - BHAVYA, VISHAV, SHIVANAND - Ronak
 
 JEE	
 
-[x] What are servlets 
-[x]Coding issues, 
-ServletResponse, ServletRequest etc…, 
-Servlet life cycle
-Servlet used as the middle tier in a three tier architecture
+- [x] What are servlets 
+- [x]Coding issues, 
+- [x] ServletResponse, ServletRequest etc…, 
+- [x] Servlet life cycle
+- [x] Servlet used as the middle tier in a three tier architecture
 
-Single-Thread Model, Database connectivity through Servlet 
-Using Persistent Connections, Passing parameters to a Servlet, Servlet to Servlet Communication, Server-Side Includes, Redirecting requests, Client Pull
+- [x] Single-Thread Model, Database connectivity through Servlet 
+- [x] Using Persistent Connections, Passing parameters to a Servlet, Servlet to Servlet Communication, Server-Side Includes, Redirecting requests, Client Pull
 Request Headers,Response Headers, Logging, Reporting Exceptions, Servlet Chaining
 Forwarding and Including Requests
-Servlets receiving information from HTML forms and responding to the client
-Session Tracking
-Session Object & Session Binding Events, Cookies , URL Rewriting, Hidden Fields, understanding Status Code "	
+- [x] Servlets receiving information from HTML forms and responding to the client
+- [x] Session Tracking
+- [x] Session Object & Session Binding Events, Cookies , URL Rewriting, Hidden Fields, understanding Status Code "	
+
+- Session 
+- Cookies 
+- Hidden 
+- Filters 
+- Request Headers 
+- Response Headers
+
+Server Codes
+- 1xx 
+  - 100 - the request is sent 
+- 2xx 
+  - 200 - OK 
+  - 201 - CREATED 
+- 3xx 
+  - 307 - Redirect 
+  - 302 - Redirect 
+- 4xx
+  - 403- Forbidden 
+  - 404 - Page Not Found 
+  - 405 - Mismatch Get / Post
+- 5xx
+  - 500 - Internal Server Error 
 
 
+
+
+```
+    class HelloServlet extends HttpServlet {
+
+        protected doGet(HttpServletRequest req, HttpServletResponse res) {
+
+        }
+
+    }
+
+       class HelloServlet extends HttpServlet implements SingleThreadedModel{
+
+        protected doGet(HttpServletRequest req, HttpServletResponse res) {
+            
+        }
+
+    }
+```
+
+http://localhost:9090/web-works/register
+http://localhost:9090/web-works/register-form.html
 
 

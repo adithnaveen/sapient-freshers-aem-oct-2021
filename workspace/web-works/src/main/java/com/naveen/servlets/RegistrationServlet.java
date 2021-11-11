@@ -2,6 +2,7 @@ package com.naveen.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
+import javax.servlet.SingleThreadModel;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +13,7 @@ import com.naveen.service.RegistrationService;
 import com.naveen.util.ContructBean;
  
 @WebServlet("/register")
-public class RegistrationServlet extends HttpServlet {
+public class RegistrationServlet extends HttpServlet { //  implements SingleThreadModel{
 	private static final long serialVersionUID = 1L;
 
 	 
@@ -23,8 +24,7 @@ public class RegistrationServlet extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		System.out.println("in doPost()-RegistrationServlet");
+		response.setContentType("text/html");
 		// get the parameters and give me the bean of registration 
 		Registration registration = ContructBean.makeRegistrationBean(request);
 		// invoke service method 
@@ -33,11 +33,13 @@ public class RegistrationServlet extends HttpServlet {
 		// based on the return value got from service method 
 		if(registerFlag) {
 			// success page / servlet 
-			System.out.println("in success... ");
 			request.getRequestDispatcher("/success").forward(request, response);
 		}else {
 			// invoke the registration page with error message  
-			request.getRequestDispatcher("registration-form.html").include(request, response);
+//			response.getWriter().println("Sorry Registration Not Success<hr />"); 
+//			request.getRequestDispatcher("registration-form.html").include(request, response);
+			
+			response.sendRedirect("index.jsp");
 		}
 		// redirect to respective page 
 	}

@@ -13,7 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
- 
+
+	
+	String companyName; 
+	
     public HelloServlet() {
     	System.out.println("in HelloServlet-Constructor()");
     }
@@ -21,6 +24,7 @@ public class HelloServlet extends HttpServlet {
 	 
 	public void init(ServletConfig config) throws ServletException {
 		System.out.println("in Init>>> ");
+		companyName = config.getServletContext().getInitParameter("COMPANY1"); 
 	}
 
  
@@ -38,7 +42,8 @@ public class HelloServlet extends HttpServlet {
 		out.println("<h1>Welcome to Servlets</h1>"); 
 		out.println("</body>");
 		out.println("</html>");
-	
+
+		System.out.println("From Servlet context got company " + companyName); 
 	}
 
 }
