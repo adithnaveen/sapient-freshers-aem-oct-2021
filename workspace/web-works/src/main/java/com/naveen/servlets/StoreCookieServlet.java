@@ -2,6 +2,7 @@ package com.naveen.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,6 +18,8 @@ public class StoreCookieServlet extends HttpServlet {
 		resp.setContentType("text/html");
 		PrintWriter out = resp.getWriter(); 
 		
+		resp.setIntHeader("Refresh", 5);
+		
 		String name = req.getParameter("name");
 		if(name== null) {
 			resp.sendRedirect("./cookie-demo.html"); 
@@ -28,7 +31,8 @@ public class StoreCookieServlet extends HttpServlet {
 		resp.addCookie(cookie);
 		
 		req.getRequestDispatcher("./cookie-demo.html").include(req, resp);
-		out.println("<h2>Cookie Stored Successfully");
+		out.println("<h2>Date & Time Is " + new Date() +"</h2>");
+		out.println("<h2>Cookie Stored Successfully </h2>");
 		out.close();
 		
 	}

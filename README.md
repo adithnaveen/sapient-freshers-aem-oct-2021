@@ -2356,15 +2356,89 @@ Day 13
 ------
 
 - [x] Session 
-- [] Cookies 
-- [] Hidden 
+- [x] Cookies 
+- [x] Hidden 
 - [] Filters 
 - [] Request Headers 
 - [] Response Headers
-- [] welcome file list 
-- 
+- [] welcome file list - http://localhost:9090/web-works/
+
 
 ## JSP 
 Why JSP Server Pages,JSP Access Model
 Syntax, Directives, Declarations, Scriptlets, Expressions, Handling HTML Forms, Using, Scripting Elements, Handling Exceptions, Coding issues, Single-Thread Model
 Database connectivity through JSP,Redirecting requests,Client Pull
+
+
+Sonar Lint 
+```
+
+@WebServlet("/hi)
+public class HelloServlet extends HttpServlet {
+
+    doget() {}
+
+}
+
+web.xml
+<servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.naveen.HelloServlet</servlet>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hi</url-pattern>
+</servlet-mapping>
+
+```
+
+
+- req.getparameter 
+- resp.sendredirect
+- you put buiness logic 
+- out.println 
+- you are handing req, res 
+- out object 
+- you have to handle exception 
+- any changes to servlet need the server to be restarted 
+- Servlet is Class - You write html code out.println("<h1>code</h1>"); 
+- JSp is HTML <html> <body><p> <%%> </p></body></html> - in this you can put Java 
+- when the changes are made to jsp then the server need not be started 
+- when you write jsp then the servlet is created, that servlet is converted to java code then compiled to .class file 
+  - and then loaded to servlet container 
+
+
+-JSP 
+    - <% %> - scriptlet 
+    - <%= %> - is called expression is used only to substitute the values (no ;)
+    - <%! %> - declaration - you can write some method or _jspInit(), _jspDestroy()
+    - <%@ %> - directive - include external resources 
+
+
+-html 
+    - can have only static content 
+      - h1, form, table, css etc 
+
+
+- in jsp you should not ideally have scriptlets 
+  - EL - Expression Language 
+  - Tags - Custom Tags / JSTL Tags 
+
+Introduce a arch called MVC 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
