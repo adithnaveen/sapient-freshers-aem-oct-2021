@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.naveen.beans.User;
+import com.naveen.service.IUserService;
 import com.naveen.service.UserService;
 
 @WebServlet("/register")
@@ -37,7 +38,7 @@ public class RegisterServlet extends HttpServlet {
 		String password = req.getParameter("password");
 		
 		// 2. make use of a model function
-		UserService service = new UserService();
+		IUserService service = new UserService();
 		User user = service.registerUser(name, email, password);
 		
 		if(user == null) {

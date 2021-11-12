@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.naveen.beans.User;
+import com.naveen.service.IUserService;
 import com.naveen.service.UserService;
 
 @WebServlet("/login")
@@ -35,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
 		
-		UserService service = new UserService();
+		IUserService service = new UserService();
 		User user = service.login(email, password);
 		
 		if(user == null) {

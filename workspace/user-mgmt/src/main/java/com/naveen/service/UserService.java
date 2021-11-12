@@ -8,8 +8,9 @@ import java.util.Map;
 import com.naveen.beans.User;
 import com.naveen.connection.GetConnection;
 
-public class UserService {
+public class UserService implements IUserService {
 
+	@Override
 	public User registerUser(String name, String email, String password) {
 
 		String sql = "insert into users (name,email, password)  values (?,?,?)";
@@ -27,6 +28,7 @@ public class UserService {
 		return null;
 	}
 
+	@Override
 	public User login(String email, String password) {
 		String sql ="select name from users where email=? and password=?"; 
 		
