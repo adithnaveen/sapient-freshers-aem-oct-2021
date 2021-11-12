@@ -2339,3 +2339,32 @@ http://localhost:9090/web-works/register
 http://localhost:9090/web-works/register-form.html
 
 
+9918426760 - Arti - Google Pay 
+
+Lokesh - 200
+Utkarsh - 200 
+Manav - 
+Sivanand - 200
+Sajid - 
+Hemanth - PAID 
+Arti - PAID
+
+
+
+-----
+Day 13
+------
+
+- [x] Session 
+- [] Cookies 
+- [] Hidden 
+- [] Filters 
+- [] Request Headers 
+- [] Response Headers
+- [] welcome file list 
+- 
+
+## JSP 
+Why JSP Server Pages,JSP Access Model
+Syntax, Directives, Declarations, Scriptlets, Expressions, Handling HTML Forms, Using, Scripting Elements, Handling Exceptions, Coding issues, Single-Thread Model
+Database connectivity through JSP,Redirecting requests,Client Pull

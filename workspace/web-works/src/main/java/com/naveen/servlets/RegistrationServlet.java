@@ -40,6 +40,7 @@ public class RegistrationServlet extends HttpServlet { //  implements SingleThre
 //			request.getRequestDispatcher("registration-form.html").include(request, response);
 			
 			response.sendRedirect("index.jsp");
+			// the scope of the servlet is lost 
 		}
 		// redirect to respective page 
 	}

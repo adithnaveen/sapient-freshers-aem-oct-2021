@@ -19,7 +19,7 @@ public class MultiplicationServlet extends HttpServlet {
 	}
  
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
+		response.setContentType("text/html"); // application/pdf (MIME Types), text/xml, msexcel 
 		PrintWriter out = response.getWriter();
 		try {
 			int value = Integer.parseInt(request.getParameter("val"));
