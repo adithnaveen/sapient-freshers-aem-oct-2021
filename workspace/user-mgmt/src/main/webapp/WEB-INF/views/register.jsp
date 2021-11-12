@@ -23,3 +23,5 @@
 		</tr>
 	</table>
 </form>
+
+<%@ include file="./footer.jspf" %>
