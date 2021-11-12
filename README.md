@@ -2429,16 +2429,137 @@ Introduce a arch called MVC
 
 
 
+JSTL - library - java standard tag library 
+standard - which gives the implementation of JSTL lib 
+
+
+
+1000
+public boolean insertEmp(){
+    try{ 
+    ps = GetConnection.getMysql().prepareStatement(sql); 
+    }catch(){
+
+    }
+    finally {
+        100% 
+        ps.close()
+    }
+}
+
+
+
+getMysql() {
+    Class.forName("com.mysql.jdbc.cj.Driver"); 
+    conn = DriverManager.getConnection("jdbc:mysql://localhost/navdb", "root", "root")
+}
+
+
+---------------------- 
+1. DB - is this up 
+   1. user - userid, username, userpassword, dob 
+   2. restaurant - restid, restname, location etc 
+2. you have write CRUD operation with User 
+   1. registerUser(User user)
+   2. login(login)
+   3. insertRestaurant(Restaurant rest)
+   4. getRestaurant(restId)...
+3. write the test case 
+4. create a maven project - for maven-archetype-webapp
+5. create servlet to talk to JDBC Code which you have written 
+   1. make 1 method - by ashotosh 
+   2. make 1 method - by rishab 
+6. jsp - your request comes from html / to display use JSP 
 
 
 
 
 
 
+T1 - RONAK, MANAV - Amit 
+    - discussed about case study 
+    - couldnt show the code, since it was not seeded the src code are in diff systems 
+    - no progress from day 10 
+    - need to work with JDBC 
+    - working with JDBC 
+    - implented reg and login with servlets + jdbc, validation is working fine
+T2 - AMIT, AAKASH - Ashotosh
+    - showed the demo 
+    - created jar file 
+    - incorporated restaurant to project, and working on login and registration 
+    - tried implementing with servlet, had some errors 
+    - implented reg and login with servlets + jdbc, validation is working fine 
+T3 - ASHUTOSH, RISHAB - Pankhuri
+    - couldn't show the demo there were exceptions 
+    - pankhuri  did not check the code / progress 
+    - sanitzed the code without exception and working 
+    - need to work with JDBC 
+    - working with JDBC, working with login registration 
+    - serlvet + reg page 
+T4 - PANKHURI, ARJUN - Arti 
+    - Arjun is absent so couldnt do it 
+    - arti did not check the code / progress 
+    - lombok had a problem  and pls ignore usage of lombok 
+    - working with JDBC but has some error 
+    - completed login and reg with JDBC 
+    - need to work on servlets 
+    - working with servlets, done with JDBC 
+T5 - ARTI, MAYURESH - Srishti 
+    -  shown demo with eclipse 
+    -  the flow was good and shown the items added to cart 
+    -  showed up to payment, and accepted amount as ack 
+    -  working on JDBC connectivity 
+    -  working on login and registration there are few errors to be fixed 
+    -  working on menu items, 
+    -  got started with servlets, working with simple forms 
+    -  login and registration + JDBC, 
+    -  menu items CRUD with JDBC
+T6 - SRISHTI, HEMANTH, SWATI - Sajid 
+    - showed the demo, was on eclipse 
+    - proper erroer messages were not shown 
+    - the application went upto confir order 
+    - basic validation is done 
+    - Implementing JDBC, there is some exception 
+    - registration with servlets assignment 
+    - reg working with DB 
+    - need to work on login 
+T7 - SAJID, LOKESH - Utkarsh 
+    - coudlnt present 
+    - login registration with IO 
+    - and working on JDBC, login registration
+    - need to complete the business logic with JDBC 
+    - login and registration is working, need to work on restaurant and other logics 
+    - need to implement with servlets 
+    - registration + jdbc, need to implement with web 
+T8 - UTKARSH, YOGESH - Bhavya 
+    - demo shown in eclipse 
+    - generate cart id randomly 
+    - application went upto payment page and bill was generated 
+    - and discount was generated upto 100 
+    - code should have be more matured like handling the case: 
+    - there is some error in reg part, it is in the file, need to work on validation 
+    - yogesh has created the tables, and need to connect with JDBC
+    - recreated the schema, and got starterd with servlets 
+    - working with multiple files (WEB/DAO/SERVICE)
+T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
+    - showed demo on eclipse 
+    - basic validation is taken care 
+    - the .txt file should not hav the keys UserName: 
+    - application went up payment 
+    - implementing JDBC 
+    - working with servlets 
+    - JDBC (reg / login) 
 
 
 
 
 
-
-
+Modules 
+    - Registration 
+    - Login 
+    - display menu items 
+    - add menu item to cart 
+    - checkout 
+    - payment 
+    
+    
