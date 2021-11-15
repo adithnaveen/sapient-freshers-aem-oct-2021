@@ -21,6 +21,17 @@
 		Date date = new Date(); 
 		out.println("Date is " + date);
 	%>
+	
+
+	
+	<table border="1">
+		<tr>
+			<td>PIZZA</td>
+			<td>100</td>
+			<td><img alt="pizza" src="./assessts/pizza.jpg" width="100" height="100"></td>	
+			<td><button>Add To Cart </button></td>		
+		</tr>
+	</table>
 </body>
 </html>
 

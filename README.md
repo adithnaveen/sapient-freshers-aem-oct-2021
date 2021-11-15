@@ -2562,4 +2562,103 @@ Modules
     - checkout 
     - payment 
     
-    
+---
+# Day 14 
+--- 
+
+
+T1 - RONAK, MANAV - Amit 
+    - discussed about case study 
+    - couldnt show the code, since it was not seeded the src code are in diff systems 
+    - no progress from day 10 
+    - need to work with JDBC 
+    - working with JDBC 
+    - implented reg and login with servlets + jdbc, validation is working fine
+    - have done login and logout + showing the items in the cart 
+    - PR not done by amit 
+    - 
+T2 - AMIT, AAKASH - Ashotosh
+    - showed the demo 
+    - created jar file 
+    - incorporated restaurant to project, and working on login and registration 
+    - tried implementing with servlet, had some errors 
+    - implented reg and login with servlets + jdbc, validation is working fine 
+    - add cart is not done, login and log out is done 
+    - PR not done properly by ashushot 
+T3 - ASHUTOSH, RISHAB - Pankhuri
+    - couldn't show the demo there were exceptions 
+    - pankhuri  did not check the code / progress 
+    - sanitzed the code without exception and working 
+    - need to work with JDBC 
+    - working with JDBC, working with login registration 
+    - serlvet + reg page 
+    - application did not work when demo 
+    - failing to fix the bug of 404, 
+T4 - PANKHURI, ARJUN - Arti 
+    - Arjun is absent so couldnt do it 
+    - arti did not check the code / progress 
+    - lombok had a problem  and pls ignore usage of lombok 
+    - working with JDBC but has some error 
+    - completed login and reg with JDBC 
+    - need to work on servlets 
+    - working with servlets, done with JDBC 
+    - there were errors in the application, did not show the demo 
+    - arti did not do the PR, since the code is not pushed 
+T5 - ARTI, MAYURESH - Srishti 
+    -  shown demo with eclipse 
+    -  the flow was good and shown the items added to cart 
+    -  showed up to payment, and accepted amount as ack 
+    -  working on JDBC connectivity 
+    -  working on login and registration there are few errors to be fixed 
+    -  working on menu items, 
+    -  got started with servlets, working with simple forms 
+    -  login and registration + JDBC 
+    -  menu items CRUD with JDBC
+    -  login and register is working find 
+    -  
+T6 - SRISHTI, HEMANTH, SWATI - Sajid 
+    - showed the demo, was on eclipse 
+    - proper erroer messages were not shown 
+    - the application went upto confir order 
+    - basic validation is done 
+    - Implementing JDBC, there is some exception 
+    - registration with servlets assignment 
+    - reg working with DB 
+    - need to work on login 
+    - register and login, the application looks good but business logic is missing 
+    - 
+T7 - SAJID, LOKESH - Utkarsh 
+    - coudlnt present 
+    - login registration with IO 
+    - and working on JDBC, login registration
+    - need to complete the business logic with JDBC 
+    - login and registration is working, need to work on restaurant and other logics 
+    - need to implement with servlets 
+    - registration + jdbc, need to implement with web 
+    - login and registration is done, working on UI 
+T8 - UTKARSH, YOGESH - Bhavya 
+    - demo shown in eclipse 
+    - generate cart id randomly 
+    - application went upto payment page and bill was generated 
+    - and discount was generated upto 100 
+    - code should have be more matured like handling the case: 
+    - there is some error in reg part, it is in the file, need to work on validation 
+    - yogesh has created the tables, and need to connect with JDBC
+    - recreated the schema, and got starterd with servlets 
+    - working with multiple files (WEB/DAO/SERVICE)
+    - login and logout is working, working with test cases 
+T9 - BHAVYA, VISHAV, SHIVANAND - Ronak 
+    - showed demo on eclipse 
+    - basic validation is taken care 
+    - the .txt file should not hav the keys UserName: 
+    - application went up payment 
+    - implementing JDBC 
+    - working with servlets 
+    - JDBC (reg / login) 
+    - login and logout is done 
+    - created the PR but have to be done 
+    - 
+ 
+
+
+handling images 

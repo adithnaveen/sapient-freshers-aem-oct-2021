@@ -39,6 +39,9 @@
 # Server Codes 
 > https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
+# Use Official NGINX Docker Image 
+> https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/
+
 
 
 
