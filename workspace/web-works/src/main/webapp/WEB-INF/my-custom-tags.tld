@@ -17,6 +17,27 @@
 		<name>date</name>
 		<tag-class>com.naveen.tlds.DateTag</tag-class>
 		
+		<attribute>
+			<name>pattern</name>
+			<required>false</required>
+		</attribute>
 	</tag>
 	 
+	<tag>
+		<name>table</name>
+		<tag-class>com.naveen.tlds.TableTag</tag-class>
+		<attribute>
+			<name>border</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>delim</name>
+			<required>false</required>
+		</attribute>
+		
+		<attribute>
+			<name>cssClass</name>
+			<required>false</required>
+		</attribute>
+	</tag>
 </taglib>

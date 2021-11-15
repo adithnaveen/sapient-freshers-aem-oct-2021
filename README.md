@@ -2662,3 +2662,38 @@ T9 - BHAVYA, VISHAV, SHIVANAND - Ronak
 
 
 handling images 
+
+- The images will be in WebApp folder 
+- the database shall have the link of the image 
+
+
+| name   | price | image link |
+| ------ | ----- | ---------- |
+| pizza  | 123   | pizza.jpg  |
+| burger | 100   | burger.jpg |
+
+
+```
+<img src="pizza.jpg">
+
+<nav: date />
+<nav: date pattern="dd-MM-yyyy" />
+<nav: date pattern="MM-yyyy" />
+
+
+<nav:restaurants>
+id,name,city\n
+101,ashoka,bengaluru\n
+102,leela,delhi\n
+</nav:restaurants>
+
+<nav:restaurant id="101">
+
+```
+
+
+id,name,city 
+
+
+101,ashoka,bengaluru\n -> 101,ashoka,bengaluru -> 101 ashoka bengaluru
+102,leela,delhi\n

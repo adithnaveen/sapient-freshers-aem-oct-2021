@@ -42,6 +42,11 @@
 # Use Official NGINX Docker Image 
 > https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/
 
+# effective programming practices 
+> https://kea.nu/files/textbooks/new/Effective%20Java%20%282017%2C%20Addison-Wesley%29.pdf	
+
+
+
 
 
 
