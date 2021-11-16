@@ -2735,3 +2735,87 @@ Java Best Practices: Overview
 13. Efficient use of Strings
 14. Unnecessary Objects Creation
 15. Proper Commenting"	
+
+
+
+-- C++ 
+
+```
+    class A {}; 
+    int main() {
+
+    }
+
+```
+
+-- java 
+
+```
+    class Hello {
+                public static void main(String [] args) {
+
+                } 
+    }
+
+    class MyClass implements AutoClosable{
+        BufferedReader br ; 
+
+        public MyClass() {
+            br  = new BufferedReader(new InputStreamReader("sample.txt")); 
+        }
+        
+        @Overrident 
+        public void close() {
+            br.close();
+        }
+    }
+ 
+ try {
+    MyClass m = new MyClass(); 
+ }catch(Exception e) {
+     ...
+ }
+
+try (MyClass m = new MyClass();) {
+
+
+}
+
+
+
+main() {
+    int x; 
+    int *xx; 
+    xx = (*int*) malloc(sizeof(int)*6); 
+    ... 
+    free(xx); -> marking for deleting 
+
+}
+
+JDK 1.5 - Monitors - mutex 
+class Hi {
+    int xx; -> heap 
+        public static void main(String [] args) {
+            int y; 
+            System.gc();
+            System.getRuntime().gc();
+
+
+            try {
+
+            }catch() {
+
+            }finally {
+                // 
+                close methods
+            }
+
+            try (){
+                
+            }
+        }
+}
+
+
+
+```
