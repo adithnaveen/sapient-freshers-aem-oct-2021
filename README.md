@@ -2697,3 +2697,41 @@ id,name,city
 
 101,ashoka,bengaluru\n -> 101,ashoka,bengaluru -> 101 ashoka bengaluru
 102,leela,delhi\n
+
+
+
+
+--- 
+#Day 15 
+---- 
+
+
+1. assignment 
+   1. <nav:food-item>101</nav:food-item>
+   2. <nav:food-item id=101 />
+top-down - from JSP to TLD 
+bottom-up - from TLD to jsp 
+
+2. jsp:include , jsp:forward 
+3. <%@ include file="./records.csv"%>
+
+
+
+
+
+Java Best Practices: Overview
+1. Use Proper Naming Conventions
+2. Class Members must be accessed privately
+3. Use Underscores in lengthy Numeric Literals
+4. Never leave a Catch Blocks empty
+5. Use StringBuilder or StringBuffer for String Concatenation 
+6. Avoid Redundant Initializations
+7. Using enhanced for loops instead of for loops with counter
+8. Proper handling of Null Pointer Exceptions
+9. Float or Double: the right choice?
+10. Use of single quotes and double quotes
+11. Avoiding Memory leaks
+12. Return Empty Collections instead of returning Null elements
+13. Efficient use of Strings
+14. Unnecessary Objects Creation
+15. Proper Commenting"	

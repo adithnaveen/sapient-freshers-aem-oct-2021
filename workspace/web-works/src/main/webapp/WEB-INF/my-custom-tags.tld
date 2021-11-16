@@ -40,4 +40,17 @@
 			<required>false</required>
 		</attribute>
 	</tag>
+	
+	<tag>
+		<name>restaurant</name>
+		<tag-class>com.naveen.tlds.RestaurantGetByIdTag</tag-class>
+		<attribute>
+			<name>rid</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+	
+	
+	
+	
 </taglib>

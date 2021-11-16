@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="login-validate.jsp" method="post">
+	<input type="hidden" name="company" value="Sapient">
+		<table border="1">
+			<tr>
+				<td>Enter User Name</td>
+				<td><input type="text" name="uname" /> </td>
+			</tr>
+			 	<tr>
+				<td>Enter Password</td>
+				<td><input type="password" name="password" /> </td>
+			</tr>
+			 	<tr>
+				<td>Select Gender</td>
+				<td>
+					<input type="radio" name="gender" value="male" /> Male |
+					<input type="radio" name="gender" value="female" /> Female |
+					<input type="radio" name="gender" value="transgender" /> Transgender |  
+				  </td>
+			</tr>
+			 	<tr>
+				<td>Enter Address</td>
+				<td><textarea rows="4" cols="40" name="address"></textarea></td>
+			</tr>
+			 
+			 
+			 
+			<tr>
+				<td>Select your interests</td>
+				<td>
+					<input type="checkbox" name="interest" checked="checked" value="sports"> Sports |
+					<input type="checkbox" name="interest" value="politics"> Politics | 
+					<input type="checkbox" name="interest" value="news"> News | 
+					<input type="checkbox" name="interest" value="other"> Others | 
+					  
+				</td>
+			</tr>
+			 
+			 <tr>
+				<td>Select your Qualification</td>
+				<td>
+					<select name="qual">
+						<option value="graduate">Graduate</option>
+						<option value="post-graduate">Post Graduate</option>
+						<option value="doctrate">Doctrate</option>
+						<option value="elementary">Elementary</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="reset" /> </td>
+				<td><input type="submit" value="Register" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

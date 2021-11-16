@@ -45,6 +45,9 @@
 # effective programming practices 
 > https://kea.nu/files/textbooks/new/Effective%20Java%20%282017%2C%20Addison-Wesley%29.pdf	
 
+# Java Coding Best Practices 
+> https://xperti.io/blogs/java-coding-best-practices/
+
 
 
 

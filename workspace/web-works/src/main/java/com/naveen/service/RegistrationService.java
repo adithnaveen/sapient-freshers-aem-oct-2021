@@ -21,7 +21,8 @@ public class RegistrationService {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			connection = DriverManager.getConnection
-						("jdbc:mysql://localhost/sap_aem", "root", "kanchan@1");
+					("jdbc:mysql://localhost/sap_aem", "root", "kanchan@1");
+			System.out.println("Connection object is " + connection);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -46,5 +47,21 @@ public class RegistrationService {
 	 	
 	 	return list; 
 	}
-	
+	public Restaurant getRestaurantById(int rid) {
+		String sql ="select rname, city from restaurant where rid = ?";
+		try (PreparedStatement ps = connection.prepareStatement(sql); ){
+			
+			ps.setInt(1, rid);
+			ResultSet rs = ps.executeQuery();
+			if(rs.next()) {
+				Restaurant rest = new Restaurant(); 
+				rest.setRestName(rs.getString(1));
+				rest.setCity(rs.getString(2));
+				return rest; 
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null; 
+	}
 }

@@ -56,16 +56,14 @@ id;name;city;email;state
 102;Arujn;Hyderabad;arjun@gmail.com;Telangana
 103;Yogesh;Delhi;yogesh@example.com;Delhi
 </nav:table>
+
 	<br />
 	<br />
 	<br />
 	<nav:table border="1">
 		<%@ include file="./records.csv"%>
 	</nav:table>
-
-
-<%--  <nav:restaurant rid=101 cssClass="bordered-table" /> 
- --%>
-
+<hr /> 
+  <nav:restaurant rid="102"/>
 </body>
 </html>
