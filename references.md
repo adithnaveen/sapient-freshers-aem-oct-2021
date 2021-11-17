@@ -48,6 +48,13 @@
 # Java Coding Best Practices 
 > https://xperti.io/blogs/java-coding-best-practices/
 
+# Plant UML case studies 
+> https://real-world-plantuml.com/
+
+#  Plant UML 
+> https://plantuml.com
+
+
 
 
 

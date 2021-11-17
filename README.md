@@ -2819,3 +2819,181 @@ class Hi {
 
 
 ```
+
+
+
+---
+# Day 16 
+--- 
+0. checkin your code 
+1. validation
+   1. Why
+   2. How   - some framework - why not regex ->  empName [a-zA-Z+] or [a-zA-Z]{4,10} - JPA / Hibernate Validation framework 
+2. loggers - no system.out.println 
+3. code quality 
+4. In eclipse we should have sonarlint 
+5. We gonna create a service layer code to validate PT 1 
+6. Install PMD and/or CheckStyle - Cyclomatic Complexity 
+7. pointers of good programming practices 
+   1. use builder pattern instead of creating an object when it huge 
+   2. try using try-with instead of try-catch-finally 
+   3. dont declare public varilables instead of public / protected getters / setters 
+   4. try not using System.gc() 
+   5. every bean should have toString 
+   6. when you use hashcode then use equals also 
+   7. consider to have static factory instead of public constructors 
+   8. prefer to have comparator instead of comparable 
+   
+   class String implements Serializable, Comparable<String> {
+
+       @Overriden 
+       public void compareTo(String s) {
+           // lexographical Check 
+       }
+   }
+
+```
+
+   class Employee implements Serializable, Comparable<String> {
+
+       @Overriden 
+       public void compareTo(String s) {
+           // lexographical Check 
+       }
+   }
+
+    class EmployeeSorter  {
+        public List<Employee> sortNameAscending(List<Employee> employees) {
+            new Comparator() {
+                public int compare(String s1, String s2) {
+                    return s1.compareTo(s2); 
+                }
+            }
+         }
+
+            public List<Employee> sortNameDescending(List<Employee> employees) {
+             
+            Comparator<String>  ascendingByName = (s1, s2) -> s2.compareTo(s1); 
+            Collections.Sort(employees,ascendingByName ); 
+         }
+    }
+```
+
+
+   9.  use bounded wildcard chars for API 
+   10. dont pass null to any method 
+   11. avoid using e.printStackTracke() in catch block if needed 
+       1.  try {}catch(Exception1 | Exception2 ignore ) {}
+   12. use camelCasing - methods and variables 
+       1.  pascal casing for class 
+       2.  upper case for constants / enums 
+       3.  lower case for packages 
+   13. have meaning ful variables and commentds 
+   14. dont return null instead of that return empty list 
+   15. Give meaning full message for exception, make sure you handle that in Custom Exception 
+   16. Use Composition(horizontal) Over Inheritenace (Vertical)
+   17. Use interface instead of asbtract class so that it give you opportunity in future 
+   18. Use lambda where ever possible (Ex Stream) for iteration 
+   19. use enums instead of declaring constants in Class / Interface 
+   20. hold reference of the interface and create an object of the class rather to have the 
+         reference of the class Ex: ICustomerDao dao = new CustomerDao(); 
+
+
+
+public void hi(String name) {
+    if(name.length <10) {
+        return "No Name";   - 1 path 
+    }else {
+        return "hi "+ name; - 1 Path 
+    }
+}
+
+
+
+
+
+Violation 
+- Declaring Public variable 
+- Variables should always be in camelCase 
+- avoid to have try catch finally instead have try-with-catch 
+- 
+
+
+
+[a-zA-Z+] 
+
+String empName = "Hemanth1"; 
+String regExValues = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+boolean flag = false; 
+for(i=0; i<empName.length; i++) {
+       if(!empName.charAt(i).contains(regExValues)){
+           flag = false; 
+       }
+    
+}
+
+if(!flag) {
+    sorry invalid name 
+}
+
+
+What is builder Class 
+
+```
+    class Employee {
+        private int empId;
+        private String empName; 
+        private boolean isMarried; 
+        .... 30 
+        private double salary; 
+    }
+
+
+    Employee emp = new Employee(); 
+    emp.setxxx... 
+
+```
+
+
+
+  ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
+                    .applySettings(configuration.getProperties())
+                    .build();
+
+
+
+```
+    abstract class Company  {
+        private Company(){}
+        public static Company getCompany(String companyName) {
+            if(companyName.equals("infy)) {
+                return new Infosys(); 
+            }else if(companyName.equals("wipro")) {
+                return new Wipro(); 
+            }else if(companyName.equals("ManipalInfossy")) {
+                return new ManipalIfnfosys();
+            }
+
+            return null; 
+        }
+        void solution(); 
+    }
+    class Infosys  extends Company {
+        public void solution(){}        
+    }
+    class Wipro Infosys  extends Company {
+        public void solution(){}
+    }
+    class ManipalInfosys  extends Company  {
+        public void solution(){}
+    }
+ 
+    Company company = Company.getCompany("ManipalInfosys"); 
+
+
+```
+
+
+
+
