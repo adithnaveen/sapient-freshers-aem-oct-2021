@@ -2,7 +2,7 @@ package com.sapient.client;
 
 import com.sapient.beans.Restaurant;
 import com.sapient.dao.IRestaurantDAO;
-import com.sapient.dao.RestaurantDAO;
+import com.sapient.dao.RestaurantDAOMysql;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -18,7 +18,7 @@ public class RestaurantApp {
 //		restaurant.setEmai("indra@gmail.com");
 //		
 		
-		IRestaurantDAO dao = new RestaurantDAO(); 
+		IRestaurantDAO dao = new RestaurantDAOMysql(); 
 //		boolean flag = dao.insertRestaurant
 //				(restaurant);
 		

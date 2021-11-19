@@ -3169,7 +3169,19 @@ mvn sonar:sonar \
   -Dsonar.login=a7fb5c2c8cc25f6e99dd1a202d3677b5b88b370b
 
 > mvn clean install -DskipTests=true
-
+o
 > mvn clean install sonar:sonar  -Dsonar.login=a7fb5c2c8cc25f6e99dd1a202d3677b5b88b370b
+
+
+1. SOLID 
+   1. S - Single Responsibility Principle 
+   2. O - Open Close Principle 
+   3. L - Functions that use pointers or references t base classes must be able to use objects of derived classes without knowing it.
+   4. I - Interface Segregation Principle 
+   5. D - Dependency Inversion Principle (DI / IOC)
+2. Design Patterns 
+3. Anti Pattern (Break that in to smaller pieces)
+4. DRY, KISS, YAGNI 
+
 
 

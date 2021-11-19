@@ -10,7 +10,7 @@ import com.sapient.beans.Restaurant;
 import com.sapient.connection.GetConnection;
 import com.sapient.util.Util;
 
-public class RestaurantDAO implements IRestaurantDAO{
+public class RestaurantDAOMysql implements IRestaurantDAO{
 
 	@Override
 	public boolean insertRestaurant(Restaurant restaurant) throws SQLException{

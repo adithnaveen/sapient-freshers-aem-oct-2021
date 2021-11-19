@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.sapient.beans.Restaurant;
 import com.sapient.dao.IRestaurantDAO;
-import com.sapient.dao.RestaurantDAO;
+import com.sapient.dao.RestaurantDAOMysql;
 import com.sapient.exception.NameTooShortException;
 
 public class RestaurantService implements IRestaurantService {
@@ -13,7 +13,7 @@ public class RestaurantService implements IRestaurantService {
 	private IRestaurantDAO dao; 
 	
 	public RestaurantService() {
-		dao = new RestaurantDAO(); 
+		dao = new RestaurantDAOMysql(); 
 	}
 	
 	@Override
