@@ -7,6 +7,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
 		<jacoco.version>0.8.6</jacoco.version>
@@ -20,6 +22,7 @@
 		<sonar.test.inclusions>src/test</sonar.test.inclusions>
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
 		<sonar.projectName>java-works</sonar.projectName>
+		<sonar.projectKey>java-works</sonar.projectKey>
 		<sonar.language>java</sonar.language>
 		<sonar.java.binaries>target</sonar.java.binaries>
 		<sonar.login>a7fb5c2c8cc25f6e99dd1a202d3677b5b88b370b</sonar.login>
@@ -33,20 +36,42 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
 		<dependency>
 			<groupId>org.sonarsource.scanner.maven</groupId>
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>3.2</version>
 		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.26</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.30</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.16</version>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 
 
 	<build>
 		<plugins>
-		
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -79,10 +104,10 @@
 					</execution>
 				</executions>
 
-			 
+
 
 			</plugin>
-			
+
 		</plugins>
 	</build>
 

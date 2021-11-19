@@ -3168,6 +3168,8 @@ mvn sonar:sonar \
   -Dsonar.host.url=http://localhost:9000 \
   -Dsonar.login=a7fb5c2c8cc25f6e99dd1a202d3677b5b88b370b
 
-mvn clean install -DskipTests=true
+> mvn clean install -DskipTests=true
+
+> mvn clean install sonar:sonar  -Dsonar.login=a7fb5c2c8cc25f6e99dd1a202d3677b5b88b370b
 
 
