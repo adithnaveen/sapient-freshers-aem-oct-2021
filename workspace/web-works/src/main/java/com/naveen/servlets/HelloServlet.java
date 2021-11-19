@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -43,6 +46,7 @@ public class HelloServlet extends HttpServlet {
 		out.println("</body>");
 		out.println("</html>");
 
+		log.info("HELLO LOG..."); 
 		System.out.println("From Servlet context got company " + companyName); 
 	}
 

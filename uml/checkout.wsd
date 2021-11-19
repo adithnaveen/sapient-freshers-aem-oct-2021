@@ -1,0 +1,11 @@
+@startuml
+Arti -> LoginSystem : Pass Valid User Name & Passowrd 
+Arti <- LoginSystem : Take User to Dashboard 
+Arti -> Dashboard : Looks for The products 
+Dashboard -> Cart: Add Food Item
+Cart -> Cart : Add More Items 
+Cart -> Checkout : After Adding Products 
+Checkout -> Payment : For the payment Method 
+Arti -> Payment: Specifies Payment Mode 
+Payment -> Dashboard: After successfull payment
+@enduml

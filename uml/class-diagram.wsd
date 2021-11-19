@@ -1,0 +1,11 @@
+@startuml
+    class First {
+        String value 
+        void firstMethod()
+    }
+
+    class Second {
+        String nextValue
+        void secondMethod()
+    }
+@enduml

@@ -8,6 +8,7 @@ import java.util.List;
 
 import com.sapient.beans.Restaurant;
 import com.sapient.connection.GetConnection;
+import com.sapient.util.Util;
 
 public class RestaurantDAO implements IRestaurantDAO{
 
@@ -16,7 +17,7 @@ public class RestaurantDAO implements IRestaurantDAO{
 		// introduced in jdk 1.7 called as auto close where you dont have to handle exception 
 		// look out for syntax of try block 
 		
-		String sql ="insert into restaurant values(?,?,?,?,?,?)";
+		String sql =Util.getSqlQuery("insertRestaurant"); 
 		 try (PreparedStatement prepareStatement = GetConnection.getMysql().prepareStatement(sql);) {
 				prepareStatement.setInt(1, restaurant.getRId());
 				prepareStatement.setString(2, restaurant.getRName());

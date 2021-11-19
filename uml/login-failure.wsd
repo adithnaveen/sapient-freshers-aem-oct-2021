@@ -1,0 +1,7 @@
+@startuml
+
+User -> Website : "http://yoursite.com"
+Website -> LoginPage : "Asks For User Name and Password"
+User -> LoginPage: "Enter Invalid Details"
+LoginPage -> LoginPage : "Shows Error"
+@enduml

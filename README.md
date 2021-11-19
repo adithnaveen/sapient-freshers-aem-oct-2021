@@ -2576,7 +2576,6 @@ T1 - RONAK, MANAV - Amit
     - implented reg and login with servlets + jdbc, validation is working fine
     - have done login and logout + showing the items in the cart 
     - PR not done by amit 
-    - 
 T2 - AMIT, AAKASH - Ashotosh
     - showed the demo 
     - created jar file 
@@ -2593,7 +2592,7 @@ T3 - ASHUTOSH, RISHAB - Pankhuri
     - working with JDBC, working with login registration 
     - serlvet + reg page 
     - application did not work when demo 
-    - failing to fix the bug of 404, 
+    - failing to fix the bug of 404
 T4 - PANKHURI, ARJUN - Arti 
     - Arjun is absent so couldnt do it 
     - arti did not check the code / progress 
@@ -2615,7 +2614,7 @@ T5 - ARTI, MAYURESH - Srishti
     -  login and registration + JDBC 
     -  menu items CRUD with JDBC
     -  login and register is working find 
-    -  
+
 T6 - SRISHTI, HEMANTH, SWATI - Sajid 
     - showed the demo, was on eclipse 
     - proper erroer messages were not shown 
@@ -2657,7 +2656,7 @@ T9 - BHAVYA, VISHAV, SHIVANAND - Ronak
     - JDBC (reg / login) 
     - login and logout is done 
     - created the PR but have to be done 
-    - 
+     
  
 
 
@@ -2995,5 +2994,180 @@ What is builder Class
 ```
 
 
+
+---- 
+# Day 17 
+----
+
+
+1. Validation 
+    1. Maven Dependency 
+    2. Bean 
+    3. either @annotation / Validation 
+    4. create an object of bean 
+    5. then the exception 
+2. you will not refer to sql directly instead from .properties file 
+
+
+
+
+T1 - RONAK, MANAV - Aakash  
+    - not much progress 
+T2 - AMIT, AAKASH - Rishab
+    - not much progress 
+T3 - ASHUTOSH, RISHAB - Arjun
+    - not much progress 
+T4 - PANKHURI, ARJUN - Mayuresh
+ - not much progress 
+T5 - ARTI, MAYURESH - Swati
+    - did sequence diagrm was shown well 
+    -  use case done 
+T6 - SRISHTI, HEMANTH,SWATI - Lokesh 
+    - did sequence diagrm was shown well 
+T7 - SAJID, LOKESH - Yogesh
+    - sequence diagram shown for toy rental company 
+    - working on use case diagram 
+T8 - UTKARSH, YOGESH - Vishav 
+    - sequence diagram shown for toy rental company 
+    - working on use case diagram 
+T9 - BHAVYA, VISHAV, SHIVANAND - Manav
+    - sequence diagram shown for toy rental company  
+    - need to work on use case diagram 
+
+
+# UML,Analysis, Design	
+
+"Introduction to Object Oriented Analysis & Design (OOAD), Classes and Objects, Object oriented concepts
+Fundamentals of UML, Introduction to UML, Goals of UML, Use Case Modeling, UML Diagrams, Structure Diagrams , Class and Object Diagrams , Component and, Deployment Diagram, Behavior Diagrams , Use Case specifications
+Interaction Diagrams - Sequence and Collaboration
+Activity Diagram, Associations (Composition and Aggregation)"	
+
+
+UML - Unified Modeling Langauge 
+- Sequence 
+- class 
+- activity 
+- context
+- dfd
+- flow cart
+- ER - Diagram 
+- Prototype 
+
+
+HLD - High Level Design 
+--- 
+- we want to have a registration page where user can register, and when registered successfully then the 
+  - user should get a email as a link which shall allow him / her to click post that it has to be activated 
+
+
+
+class Registration {
+    // fields 
+    // methods 
+    // static methods etc 
+}
+
+
+OOAD 
+OOPs
+    low level Implementation / Low Level Design
+       
+class Registration {
+    private int regId;  
+    // methods 
+    // static methods etc 
+}
+ 
+
+
+1. Sequence diagram 
+2. Class Diagram 
+3. Use Case Diagram 
+
+```
+    @startuml
+
+Arti -> LoginSystem : Pass Valid User Name & Passowrd 
+Arti <- LoginSystem : Take User to Dashboard 
+Arti -> Dashboard : Looks for The products 
+Dashboard -> Cart: Add Food Item
+Cart -> Cart : Add More Items 
+Cart -> Checkout : After Adding Products 
+Checkout -> Payment : For the payment Method 
+Arti -> Payment: Specifies Payment Mode 
+Payment -> Dashboard: After successfull payment
+@enduml
+```
+
+sample class diagram 
+```
+    @startuml
+
+title Classes - Class Diagram
+    abstract class First {
+        -{static}String value
+        --
+        +String value1
+        ..
+        +String value5
+        ==
+        #String value2
+        ~String value3
+        --
+        + {abstract} void firstMethod()
+    }
+
+    class Second {
+        String nextValue
+        void secondMethod()
+    }
+    
+    First <|-- Second
+    interface Third
+    First *.. Third
+    class Fourth 
+    Third o..Fourth
+@enduml
+```
+
+
+---- 
+# Day 18
+----
+
+Solid Principles	
+
+
+SOLID Principles, Checking Code quality with right tool -sonarqube
+•	Single-responsibility principle
+•	Open–closed principle
+•	Liskov substitution principle
+•	Interface segregation principle
+•	Dependency inversion principle
+
+Introduction to cyclometric complexity 
+
+
+- SonarQube - 9000
+1. Linting - Sonar / ES 
+   1. effectively using variable 
+   2. effectively using try catch 
+   3. effectively using comments 
+   4. effectively using parameters 
+   5. effectively using resouces... 
+2. if you have BL 
+   1. should be tested 
+3. bugs 
+4. hotspots etc 
+5. appxoimate time to fix above points (debt)
+6. maven project 
+
+
+mvn sonar:sonar \
+  -Dsonar.projectKey=java-works \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=a7fb5c2c8cc25f6e99dd1a202d3677b5b88b370b
+
+mvn clean install -DskipTests=true
 
 
