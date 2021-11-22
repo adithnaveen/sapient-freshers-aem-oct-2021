@@ -6,9 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import com.naveen.utils.DriverFactory;
+import static com.naveen.utils.Utility.*;
 
 public class RegisterElearningTest {
  
@@ -28,11 +27,9 @@ public class RegisterElearningTest {
 		String signUpLinkXpath="//*[@id=\"login-block\"]/div/ul/li[1]/a";
 		driver.findElement(By.xpath(signUpLinkXpath)).click(); 
 		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
+		sleepSeconds(3);
+		
 		driver.close(); 
 	}
 

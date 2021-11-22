@@ -3217,4 +3217,4 @@ Quick liks for Selenium-Cucumber
 
 
 
-
+<input size="40" class="form-control" name="firstname" type="text" id="registration_firstname">
