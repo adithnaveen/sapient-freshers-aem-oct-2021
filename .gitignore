@@ -9,4 +9,6 @@ workspace/web-works/.settings/**
 workspace/Servers/**
 workspace/user-mgmt/.settings/**
 
-**/target/** 
+**/target/**
+/drivers
+

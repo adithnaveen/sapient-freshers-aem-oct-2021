@@ -3185,3 +3185,36 @@ o
 
 
 
+---
+# Day 19 
+---
+- Selenium Cucumber
+  - Behavior driven design - Cucumber	
+  - Introduction to selenium, 
+    - WebDriver - Chrome, FireFox, Safari, IE,Edge, opera etc 
+  - Invoking a page with with selenium and cucumber 
+
+
+
+- xpath -> /html/body/div/main/section[2]/div/div/div[1]/div/div[2]/div/a
+- //*[@id="wizardMainRegion"]/div/div/div/div/ul/li[2]/a
+
+//*[@id="adaptive-menu"]/a
+
+
+- Cucumber 
+  - Given the site expedia.co.in is open 
+  - Click on Flights tab on he home screen 
+  - Then select the source are bengaluru 
+  - And desitination as delhi 
+  - Then select the from date as 06-dec-2021 
+  - And return date as 10-dec-2021
+  - Then find all the flights which are available 
+
+Quick liks for Selenium-Cucumber 
+- Chrome Driver - https://chromedriver.storage.googleapis.com/index.html
+- Selenium Maven - https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.141.59
+
+
+
+
