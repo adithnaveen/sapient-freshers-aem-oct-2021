@@ -1,5 +1,7 @@
+@sanity @login
 Feature: login feature 
 
+Scenario: 
 Given the site is up http://somesite.com  
 And user clicks on login link 
 When the login page is shown 

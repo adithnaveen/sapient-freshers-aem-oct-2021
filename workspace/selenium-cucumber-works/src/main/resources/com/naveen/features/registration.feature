@@ -1,3 +1,4 @@
+@sanity @registration
 Feature: to register the user to the system 
 
 Scenario: 
