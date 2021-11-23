@@ -3228,3 +3228,58 @@ http://localhost:9090/food-delivery-system
 -> login 
 -> username, password 
 -> submit 
+
+
+
+
+---
+
+# Day 20 
+--- 
+
+Containarization, Cloud Computing 	
+
+
+Introduction to Docker
+Docker Architecture,The Docker Hub, Docker Installation, Creating Our First Image
+Working With Multiple Images ,Containers, Running Container Commands With Docker, Exposing Our Container With Port Redirects, Installation and Image Setup
+
+Overview of PAAS, SAAS, IAAS, cloud computing, competators in the market."	
+
+
+
+- Why Docker 
+  - (Develop) ->Test -> Deployment 
+  - (Develop ->Test) -> Deployment 
+  - (Develop ->Test -> Deployment)
+
+
+
+
+Containers: 2
+  Running: 0
+  Paused: 0
+  Stopped: 2
+ Images: 4
+
+ sonar runs on 9000 
+
+ > docker run --name my-sapient-sonar -p 9000:9000 -it sonarqube
+
+ > docker run --name my-sapient-sonar -p 9000:9000 -d sonarqube
+
+> https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+ 
+
+
+Steps for Deployment 
+1. docker pull nginx
+2. docker run -it --rm -d -p 8080:80 --name web -v /Volumes/Kanchan/MyTrainings/sapient/freshers-aem-oct-2021/web-works:/usr/share/nginx/html nginx
+3. 
+
+
+Dockerfile 
+
+> docker push adithnaveen/nginx-sample-deployment:latest
+> docker run --name nginx-rishab -p 8080:80 -it adithnaveen/nginx-sample-deployment
+

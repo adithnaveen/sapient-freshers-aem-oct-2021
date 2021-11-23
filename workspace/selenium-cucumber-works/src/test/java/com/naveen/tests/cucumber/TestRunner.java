@@ -13,7 +13,6 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty", "html:target/cucumber-html-report", 
 					"json:target/cucumber-json-report"}, 
 		tags = {"~@login"}
-		
 	)
 public class TestRunner {
 	// you shall not have any business logic 
