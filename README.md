@@ -3269,8 +3269,7 @@ Containers: 2
  > docker run --name my-sapient-sonar -p 9000:9000 -d sonarqube
 
 > https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
- 
-
+  
 
 Steps for Deployment 
 1. docker pull nginx
@@ -3283,3 +3282,90 @@ Dockerfile
 > docker push adithnaveen/nginx-sample-deployment:latest
 > docker run --name nginx-rishab -p 8080:80 -it adithnaveen/nginx-sample-deployment
 
+
+
+---
+
+# Day 21
+--- 
+
+
+```
+<html>
+    <body>
+        <h1> Hello  </h1>
+    </body>
+</html>
+```
+
+LAMP 
+XAMP
+WAMP 
+
+Overview of PAAS, SAAS, IAAS, cloud computing, competators in the market."	
+
+Cloud 
+    - ec2, s3,  - amazon/azure/heroku/digital ocean/gcp   - IAAS 
+    - salesforce, oracle peoplesoft, dropbox, google drive, sharepoint, google apps , teams   - SAAS
+    - google app engin, azure, amazon , teams  - PAAS
+
+
+
+
+
+Web Concepts /  Web Server	"HTTP codes, HTTP Request, HTTP Standards
+Apache 2.x, Nginx, HTTP1.0, HTTP1.1, HTTP 2.0, HATEOS (theory)
+Running a simple web application(HTML on Apache) "	
+
+
+- Nginx
+    - Reverse Proxy 
+    - Forward Proxy 
+
+
+HTTP1.0 - Stateful prototocol 
+HTTP1.1 - state less protocol 
+HTTP2.0 - Binary protocol 
+
+
+
+HATEOS (theory)
+- xml 
+- json 
+
+
+----------
+```
+<?xml version="1.0"?>
+
+<employees>
+    <emp id="101">
+        <name>
+            <first>Arjun</first>
+            <last>Kumar</last>
+        <name>
+        <address>
+            <hno>123</hno>
+        </address>
+    </emp>
+</employees>
+```
+
+----------
+HATEOAS
+- Level Zero - Plain Old XML (POX)
+- Level One -  generally HTTP POST/GET.
+- Level Two - Create, Read, Update and Delete (CRUD)
+- Level Three - get related data - easy discoverability
+
+
+- rest server - project 
+  - NodeJS 
+  - npm 
+- .html 
+
+Todays Assignment 
+1. Setup nginx with reverse proxy and show the settings 
+2. setup apache (http) server 
+3. Project - Identify the data model & host it with json-server 
+4. Create basic HTML pages for the data model and should have hyper link to link the pages 

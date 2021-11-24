@@ -1,0 +1,45 @@
+body {
+    background-color: azure;
+}
+
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: blue;
+}
+
+
+table, tr, td {
+    border: 1px solid crimson;
+}
+
+th {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+.highlight {
+    background-color: bisque;
+}
+
+:invalid {
+    background-color: crimson;
+}
+
+:valid {
+    background-color: greenyellow;
+}
+
+
+:required {
+    background-color: aqua;
+}

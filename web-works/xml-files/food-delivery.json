@@ -1,0 +1,36 @@
+{
+    "users" :[
+        {
+            "id": 101, 
+            "name" :"Srishti", 
+            "address" : {
+                "hno" : 123, 
+                "street" :"some street", 
+                "city" :"some city", 
+                "state" :"some state"
+            }
+        }, 
+         {
+            "id": 102, 
+            "name" :"Srishti", 
+            "address" : {
+                "hno" : 123, 
+                "street" :"some street", 
+                "city" :"some city", 
+                "state" :"some state"
+            }
+        }
+    ], 
+    "food-items" : [
+        {
+            "id" :"123", 
+            "name" :"pizza", 
+            "cost" :100 
+        }, 
+        {
+            "id" :"124", 
+            "name" :"Dosa", 
+            "cost" :30 
+        }
+    ]
+}

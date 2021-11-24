@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script type="text/javascript">
+        function getSelectedContent() {
+
+            var _text1 = document.myform.text1.value;
+            console.log(_text1);
+            var _start = document.myform.start.value;
+            var _end = document.myform.end.value;
+            console.log(_text1.substring(_start, _end));
+            return false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <form name="myform" novalidate>
+
+        <p>
+            <label for="text1">Field 1</label>
+            <input type="text" name="text1" id="text1" autofocus class="highlight" required>
+        </p>
+        <p><input type="text" name="start" id="" placeholder="start"></p>
+        <p><input type="text" name="end" id="" placeholder="end"></p>
+
+        <p>Enter zipcode <input type="text" name="zipcode" 
+                 pattern="[0-9]{6}" placeholder="Enter 6 chars"></p>
+        <button onclick="return getSelectedContent()">Submit</button>
+
+    </form>
+</body>
+
+</html>

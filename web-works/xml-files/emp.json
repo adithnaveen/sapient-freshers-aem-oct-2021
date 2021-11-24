@@ -1,0 +1,26 @@
+{
+    "employees": [
+        {
+            "employee": {
+                "name": {
+                    "first": "Arjun",
+                    "last": "Kumar"
+                },
+                "address": {
+                    "hno": 123
+                }
+            }
+        },
+        {
+            "employee": {
+                "name": {
+                    "first": "Sajid",
+                    "last": "Ansari"
+                },
+                "address": {
+                    "hno": 222
+                }
+            }
+        }
+    ]
+}
