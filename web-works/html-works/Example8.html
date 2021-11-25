@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:first-child {
+            text-align: center;
+            font-size: 70pt;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('./images/tampa.jpg');
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-stroke-color: rgb(87, 223, 46);
+            -webkit-text-stroke-width: 3px;
+        }
+
+        #new-div {
+            column-count: 4;
+            text-align: justify;
+            padding: 50px;
+            column-gap: 30px;
+            column-rule: 1px solid black;
+        }
+
+        #list1 {
+            width: 250px;
+        }
+
+        #list1 li {
+            padding: 10px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            list-style: none;
+        }
+
+        #list1 li:first-child {
+            border-radius: 10px 10px 0 0;
+            border-top: 1px solid black;
+        }
+
+        #list1 li:last-child {
+            border-radius: 0 0 10px 10px;
+        }
+
+        #list1 li:hover {
+            background-color: aquamarine;
+        }
+
+        #list1 li:nth-child(even) {
+            background-color: thistle;
+        }
+
+        .active {
+            background-color: rgb(204, 96, 204);
+            color: aliceblue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is first h1</h1>
+    <h1>This is second h1</h1>
+
+    <hr>
+    <div id="new-div">
+        <p>
+            Publicis Sapient is an American digital consulting company, founded as Sapient in Cambridge, Massachusetts
+            in 1990 by Jerry Greenberg and J. Stuart Moore.[2][3]
+
+            On February 6, 2015, Sapient became a fully owned division of French advertising giant Publicis, in a deal
+            valued at $3.7bn (£2.3bn).[4]
+
+            On November 17, 2016, Publicis Sapient announced SapientNitro was merging with sister agency Razorfish to
+            form SapientRazorfish, which would be led by former SapientNitro CEO Alan Wexler. Publicis. At the time,
+            Sapient consisted of both SapientRazorfish and Sapient Consulting, and was co-led by Alan Wexler and Sapient
+            Consulting CEO Chip Register.[5]
+
+            On February 13, 2019, SapientRazorfish and Sapient Consulting were merged into one brand, Publicis
+            Sapient,[6] led by Nigel Vaz, who was appointed CEO the prior week.[7]
+        </p>
+        <p>
+            Publicis Sapient is an American digital consulting company, founded as Sapient in Cambridge, Massachusetts
+            in 1990 by Jerry Greenberg and J. Stuart Moore.[2][3]
+
+            On February 6, 2015, Sapient became a fully owned division of French advertising giant Publicis, in a deal
+            valued at $3.7bn (£2.3bn).[4]
+
+            On November 17, 2016, Publicis Sapient announced SapientNitro was merging with sister agency Razorfish to
+            form SapientRazorfish, which would be led by former SapientNitro CEO Alan Wexler. Publicis. At the time,
+            Sapient consisted of both SapientRazorfish and Sapient Consulting, and was co-led by Alan Wexler and Sapient
+            Consulting CEO Chip Register.[5]
+
+            On February 13, 2019, SapientRazorfish and Sapient Consulting were merged into one brand, Publicis
+            Sapient,[6] led by Nigel Vaz, who was appointed CEO the prior week.[7]
+        </p>
+    </div>
+    <hr>
+
+    <ul id="list1">
+        <li>List Item1</li>
+        <li>List Item2</li>
+        <li>List Item3</li>
+        <li>List Item4</li>
+        <li>List Item5</li>
+        <li class="active">List Item6</li>
+        <li>List Item7</li>
+    </ul>
+
+</body>
+
+</html>

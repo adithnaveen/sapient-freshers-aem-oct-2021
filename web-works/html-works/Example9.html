@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+            background-color: antiquewhite;
+            transition: all 1s ease-in-out;
+        }
+
+        h1:hover {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50pt;
+            color: red;
+            background-color: aqua;
+        }
+
+        #t1 {
+            margin-left: 10px;
+            padding-left: 30px;
+            transform: scale(1.5);
+        }
+
+        #t2 {
+            transform: scale(0.5);
+        }
+
+        #t3:hover {
+            transform: translateX(50px) translateY(50px);
+            transition: all 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is H1</h1>
+    <hr>
+    <hr>
+
+    <img src="./images/tampa.jpg" alt="tampa" id="t1">
+    <img src="./images/tampa.jpg" alt="tampa" id="t2">
+    <img src="./images/tampa.jpg" alt="tampa" id="t3">
+    <img src="./images/tampa.jpg" alt="tampa" id="t4">
+
+
+</body>
+
+</html>

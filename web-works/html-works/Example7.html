@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        #d1 {
+            border-radius: 20px;
+            box-shadow: 15px 15px gray;
+        }
+
+        #d2 {
+            width: 300px;
+            border-radius: 15px 45px;
+            background-image: url("./images/cake.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #d3 {
+            border-radius: 50%;
+        }
+
+        #d4 {
+            border-width: 30px;
+            border-image: url("./images/border_image_2.png") 20% stretch;
+        }
+
+        #d5 {
+            background-image: linear-gradient(to right, red, blue);
+        }
+
+        #d6 {
+            background-image: linear-gradient(to right, red, blue, black, white, gray);
+        }
+
+        #d7 {
+            background-image: radial-gradient(red, yellow)
+        }
+
+        #tampa {
+            border-radius: 30%;
+            box-shadow: 0px 0px 40px red;
+            margin: 50px;
+        }
+
+        #d8,
+        #d9 {
+            border-radius: 25%;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS3 Demo</h1>
+    <div class="box" id="d1"></div>
+    <div class="box" id="d2"></div>
+    <div class="box" id="d3"></div>
+    <div class="box" id="d4"></div>
+    <div class="box" id="d5"></div>
+    <div class="box" id="d6"></div>
+    <div class="box" id="d7"></div>
+    <div class="box" id="d8"></div>
+    <div class="box" id="d9"></div>
+
+    <div></div>
+
+    <div class="box">
+        some content some content some content some content some content some content some content some content
+    </div>
+    <br>
+    <img src="./images/tampa.jpg" alt="tampa" id="tampa">
+</body>
+
+</html>
