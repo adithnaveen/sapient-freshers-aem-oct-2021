@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover {
+            color: blueviolet;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        input:valid {
+            border: 2px solid green;
+        }
+
+        p {
+            display: none;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            padding: 20px;
+        }
+
+        div:hover p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML5 Demo</h1>
+    </header>
+    <br>
+    <form action="" id="f1">
+        <div class="">
+            <label for="username">Enter User Name</label>
+            <input type="text" name="username" id="username" required="required">
+            <button>Submit</button>
+        </div>
+    </form>
+    <hr>
+    <div>hover on me
+        <p>Hi i'm para</p>
+    </div>
+</body>
+
+</html>
