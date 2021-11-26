@@ -15,10 +15,46 @@
             console.log(__body.attributes.length);
             console.log("Body Background Color " + __body.getAttribute("bgcolor"));
         }
-        function fnChageBgColor() {
-            document.body.setAttribute("bgcolor", "blue")
+        function fnChageBgColor(color) {
+            document.body.setAttribute("bgcolor", color)
+        }
+
+        function fnManipulatePara() {
+            let existingPara = document.body.getElementsByTagName('p')[0]
+            let newElement = document.createElement("b");
+            let newText = document.createTextNode("Hello New Text");
+            // <b>Hello New Text</b>
+            newElement.append(newText);
+            // document.body.replaceChild(newElement, existingPara);
+            document.body.insertBefore(newElement, existingPara);
+        }
+
+
+
+        function fnCheckToVote() {
+            const name = prompt("Enter Your Name")
+            const age = parseInt(prompt("Enter Your age ", "18"))
+            let str = ""
+            if (age > 18) {
+                str = str + "You can Vote " + name + " you are aged " + age;
+            } else {
+                str = str + "Sorry Mr/Ms :" + name + " you have to wait for " + (18 - age) + " years";
+            }
+            document.getElementById("mydiv").innerHTML = "<h3>" + str + "</h3>";
+            document.getElementById("mydiv").setAttribute("class", "mystyle")
+        }
+
+        function fnGetSomeReturn(name) {
+            return "Hello " + name; 
         }
     </script>
+
+    <style>
+        .mystyle {
+            background-color: pink;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 
 <body bgcolor="cyan">
@@ -34,13 +70,21 @@
     </script>
 
     <button onclick="fnGetBGColor()">fnGetBGColor()</button>
-    <button onclick="fnChageBgColor()">fnChageBgColor()</button>
+    <button onclick="fnChageBgColor('white')">fnChageBgColor()</button>
     <!-- when you hover on top of the button then the background of the 
         body should be changed -->
-    <button>Red</button>
-    <button>Blue</button>
-    <button>Orange</button>
-    <button>White</button>
+    <button onmouseover="fnChageBgColor('red')">Red</button>
+    <button onmouseover="fnChageBgColor('blue')">Blue</button>
+    <button onmouseover="fnChageBgColor('orange')">Orange</button>
+    <button onmouseover="fnChageBgColor('white')">White</button>
+    <button onmouseover="fnChageBgColor('violet')"> Violet</button>
+
+    <button onclick="fnManipulatePara()">fnManipulatePara()</button>
+
+    <hr>
+    <div id="mydiv"></div>
+    <button onclick="fnCheckToVote()">fnCheckToVote()</button>
+    <button onclick="alert(fnGetSomeReturn('Amit'))">fnGetSomeReturn(name)</button>
 </body>
 
 </html>
