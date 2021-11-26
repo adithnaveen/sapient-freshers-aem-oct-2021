@@ -3369,3 +3369,160 @@ Todays Assignment
 2. setup apache (http) server 
 3. Project - Identify the data model & host it with json-server 
 4. Create basic HTML pages for the data model and should have hyper link to link the pages 
+
+
+
+-----
+# Day 22 
+-----
+ 
+
+HTML "HTML 5
+Laying out a Page with HTML5
+Page Structure - SEO 
+New HTML5 Structural Tags
+Page Simplification
+Semantic Tags, HTML5 Forms, HTML5 New Form Attributes, HTML5 New Form Field Attributes, New Form Elements"	
+"Optimize for Mobile Devices
+Use Geolocation and Maps
+Use Responsive Web Design
+Save Data Locally
+Consume Data from Services
+Understanding Progressive Web All the Things (PWA)"
+
+
+
+
+1. SQL - Oralce, Mysql, db2 etc etc... 
+   1. Normal Form - 1NF, 2NF, 3NF,.... 6NF
+   2. In java You have Object emp -> RDBMS (atomic Value)
+2. NoSQL Db - mongod, redis, cauche DB etc 
+
+
+
+1. AWD - Adaptive Web Design - the breakpoints are standardized 
+2. RWD - Responsive Web Design - RIA - Rich Internet Applications 
+
+
+
+{email: 'shiva@gmail.com', password: 'harry'}
+
+
+
+---- 
+# Day 23 
+----
+
+T1 - RONAK, MANAV - Aakash  
+    - not much progress 
+    -  - have done login and registration page,
+T2 - AMIT, AAKASH - Rishab
+    - not much progress 
+    -  - have done login and registration page,
+T3 - ASHUTOSH, RISHAB - Arjun
+    - not much progress 
+T4 - PANKHURI, ARJUN - Mayuresh
+ - not much progress 
+T5 - ARTI, MAYURESH - Swati
+    - did sequence diagrm was shown well 
+    -  use case done 
+T6 - SRISHTI, HEMANTH,SWATI - Lokesh 
+    - did sequence diagrm was shown well 
+    - have done login and registration page, and tried with fetch to 
+    - to login to the system 
+T7 - SAJID, LOKESH - Yogesh
+    - sequence diagram shown for toy rental company 
+    - working on use case diagram 
+T8 - UTKARSH, YOGESH - Vishav 
+    - sequence diagram shown for toy rental company 
+    - working on use case diagram 
+T9 - BHAVYA, VISHAV, SHIVANAND - Manav
+    - sequence diagram shown for toy rental company  
+    - need to work on use case diagram 
+
+
+
+- in bitbucket 
+    - web-main 
+    - login-page - login-page -> web-main
+    - registration-page -registration-page -> web-main 
+    - checkout-out - checkout -> web-main
+
+End Points 
+1. To Register user (email, name, password, address)
+   1. End Point      POST http://localhost:3000/users
+                        {
+                            email:"string", 
+                            name:"string", 
+                            password:"string", 
+                            address: {
+                                hno:number,
+                                street:"string"
+                                country:"string"
+                            }
+                        }
+                
+2. get food Items from DB (food-item-name, cost, image-link )
+   1. End Point  GET http://localhost:3000/restaurant -> store it in array 
+                 GET http://localhost:3000/restaurant/101/food-items/101 
+
+                 GET http://localhost:3000/restaurant/101/food-items?_name=Pizza
+
+
+- in java 
+    int x ; 
+    float y = "hi"; (x)
+
+- in java script 
+  - x = "hi"; 
+  - y= true; 
+  - z = 123; 
+
+- precedence  
+    - const  - const x = 10; + you can have scoping 
+    ``` for(i=0; i<10; i++) {
+       const x = 10; 
+     }
+     ```
+    - let  - let x = 10; 
+      ``` 
+      for(let i=0; i<10; i++) {
+       const x = 10; 
+     }
+     ```
+    - var - var x = 10; - global within function 
+     nothing  - x = 10;  - global 
+    ``` for(i=0; i<10; i++) {
+       const x = 10; 
+     }
+```
+
+- in java Script 
+```
+function Employee(name, empId) {
+    this.name = name; 
+    this.empId = empId;
+}
+Employee.prototype.display = function() {
+    console.log("Emp Name " + this.name)
+    console.log("Emp Id " + this.empId)
+}
+
+```
+
+-- in java 
+```
+class Employee{
+    private int empId;
+    private String empName;
+    public Employee(String name, int empId) {
+        this.name = name; 
+        this.empId = empId;
+    }
+    public display() {
+        syso("Emp Name " + this.name); 
+        syso("Emp Id " + this.empId);
+    }
+}
+
+```
