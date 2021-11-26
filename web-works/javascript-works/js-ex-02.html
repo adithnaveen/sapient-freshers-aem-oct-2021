@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("hi i'm from sciprt ")
+
+        function fnGetBGColor() {
+            let __body = document.body;
+            console.log(__body);
+            console.log(__body.attributes.length);
+            console.log("Body Background Color " + __body.getAttribute("bgcolor"));
+        }
+        function fnChageBgColor() {
+            document.body.setAttribute("bgcolor", "blue")
+        }
+    </script>
+</head>
+
+<body bgcolor="cyan">
+    <p>This is first Para </p>
+    <p>This is Second Para </p>
+    <script>
+        console.log(document.getElementsByTagName("p")[1]);
+        console.log(document.getElementsByTagName("p")[1].nodeName);
+        console.log(document.getElementsByTagName("p")[1].firstChild.nodeValue);
+
+
+        console.log(document.getElementsByTagName("script")[0]);
+    </script>
+
+    <button onclick="fnGetBGColor()">fnGetBGColor()</button>
+    <button onclick="fnChageBgColor()">fnChageBgColor()</button>
+    <!-- when you hover on top of the button then the background of the 
+        body should be changed -->
+    <button>Red</button>
+    <button>Blue</button>
+    <button>Orange</button>
+    <button>White</button>
+</body>
+
+</html>
