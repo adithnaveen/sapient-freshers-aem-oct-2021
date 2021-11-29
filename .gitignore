@@ -11,4 +11,5 @@ workspace/user-mgmt/.settings/**
 
 **/target/**
 /drivers
+**/node_modules/**
 

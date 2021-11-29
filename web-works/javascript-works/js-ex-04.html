@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function fnStrOpr() {
+            let myStr = "Hello"
+            let myStr1 = "Amalgamation"
+
+            console.log("length of mystr " + myStr.length);
+            console.log("Upper case of Hello " + myStr.toUpperCase());
+            console.log("Lower case of Hello " + myStr.toLowerCase());
+            console.log("Find pos of l in mystr1 " + myStr1.indexOf("l"));
+            console.log("last index of a in mystr1 " + myStr1.lastIndexOf("a"));
+            console.log("substring mystr1" + myStr1.substring(0, 3));
+            console.log("substr " + myStr1.substr(4, 2));
+            console.log("slice " + myStr.slice(1, 4));
+            console.log("split ", "red,blue,green,yello".split(","))
+        }
+        function fnJsHtmlElements() {
+            document.write("Welcome");
+            document.write("Welcome".big());
+            document.write("Welcome".blink());
+            document.write("Welcome".bold());
+            document.write("Welcome".italics());
+            document.write("Welcome".link("http://google.com"));
+            document.write("Welcome".small());
+            document.write("Welcome".strike());
+            document.write("Welcome".sub());
+            document.write("Welcome".sup());
+        }
+        function fnRegEx() {
+            let str = "Hello";
+            let regExp = new RegExp("kk")
+            console.log(str.match(regExp));
+
+            let octVal = "01239";
+            let regExp1 = /0[0-7]+/;
+            console.log(octVal.match(regExp1));
+
+            let salary = "+123asdf45";
+            if (salary.match(/[+-]\d+/) == salary) {
+                console.log("Entered Value is valid number");
+            } else {
+                console.log("Enter value is not a number ");
+            }
+
+            let email = "naveen@naveen.com";
+
+            if (email.match("[a-zA-Z_-]+[@][a-zA-Z_-]+[.com]")) {
+                console.log("Valid Email id");
+            } else {
+                console.log("invalid email id ");
+            }
+        }
+
+        function fnShowTimer() {
+            let date = new Date();
+            let hrs = date.getHours();
+            let mins = date.getMinutes();
+            let seconds = date.getSeconds();
+            document.getElementById("mydiv").innerHTML = "<p>" + hrs + "-" + mins + "-" + seconds + "</p>";
+
+            setTimeout('fnShowTimer()', 1000);
+        }
+
+        function fnOpenWindow() {
+            let newWindow = window.open("./js-ex-03.html", "new-window", "width=500,height=500");
+            newWindow.moveTo(400, 100)
+        }
+    </script>
+</head>
+
+<body onload="fnShowTimer()">
+    <!-- working of pre-defined functions-->
+    <button onclick="fnStrOpr()">fnStrOpr</button>
+    <button onclick="fnJsHtmlElements()">fnJsHtmlElements</button>
+    <button onclick="alert('hello i\'m in \njavasciprt')">Alert Click</button>
+    <button onclick="fnRegEx()">fnRegEx</button>
+    <div id="mydiv"></div>
+    <button onclick="fnOpenWindow()">Open Window</button>
+</body>
+
+</html>

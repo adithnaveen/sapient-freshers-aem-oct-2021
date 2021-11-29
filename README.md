@@ -3497,7 +3497,8 @@ End Points
      }
 ```
 
-- in java Script 
+
+>in java Script 
 ```
 function Employee(name, empId) {
     this.name = name; 
@@ -3510,7 +3511,7 @@ Employee.prototype.display = function() {
 
 ```
 
--- in java 
+> in java 
 ```
 class Employee{
     private int empId;
@@ -3526,3 +3527,42 @@ class Employee{
 }
 
 ```
+
+--- 
+# Day 24
+---
+"Objects in JavaScript / Browser
+Object Hierarchy in JavaScript
+Navigator Object
+Window Object
+Frame Object
+Location Object
+History Object
+Form Object
+Form Event and Methods
+Objects in Form
+ 
+"Text, Textarea, Password and Fileupload
+Radio Buttons
+Checkboxes
+Select
+Buttons
+Cookies
+Timer Functions
+Event handling, Mouse , Date, Arrays etc "
+
+-> es6 features 
+-> webpack 
+-> Simple application to register with Bootstrap, webpack, html, css... 
+
+
+
+- RegExp 
+    - \d - integers 
+    - \s, \w is for strings 
+    - . - for any char 
+    - * - 0 or more occurances 
+    - + - 1 or more occurance 
+    - {4,6} - min 4 chars max 6 chars 
+    - ? - 0 or 1 occurance 
+    - [] - to give range of values 

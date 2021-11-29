@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-image {
+            min-height: 210px;
+            width: 15%;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding: 4%;
+        }
+
+        .center-image {
+            width: 200px;
+            height: 240px;
+            position: absolute;
+        }
+
+        .slide-img {
+            width: 50%;
+            display: inline;
+            max-height: 100px;
+        }
+
+        .icons {
+            width: 80px;
+            height: 100px;
+            padding: 6px;
+            transition: width 1s, height 1s ease-in-out;
+        }
+
+        .icons:hover {
+            width: 90px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<!-- create a slideshow of images-->
+
+<body>
+    <div class="main-image">
+        <img class="center-image" id="main-image" src="./images/mickey.png" alt="image">
+    </div>
+    <div class="slide-img">
+        <img src="./images/mickey.png" alt="mickey" class="icons">
+        <img src="./images/minne.png" alt="minne" class="icons">
+        <img src="./images/duck.png" alt="duck" class="icons">
+        <img src="./images/tales.png" alt="tales" class="icons">
+    </div>
+
+    <script type="text/javascript">
+        let icons = document.getElementsByClassName("icons");
+        for (let i = 0; i < icons.length; i++) {
+
+            icons[i].addEventListener("mouseover", (icon) => {
+
+                document.getElementById("main-image").src = icon.target.src
+                console.log(icon.target.src);
+
+            })
+        }
+    </script>
+</body>
+
+</html>
