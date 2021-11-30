@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../external-lib/jQuery-3-dev.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(() => {
+            $("#getcontent").click(fnGetUsers)
+            $("#postcontent").click(fnPostUser)
+        })
+
+        function fnGetUsers() {
+            $.ajax("https://jsonplaceholder.typicode.com/users/1",
+                {
+                    success: fnRender,
+                    type: "GET",
+                    dataType: "json"
+                })
+        }
+        function fnRender(data) {
+            console.log(data.address.street)
+            console.log(data.name)
+        }
+
+        // not fully functional code 
+        function fnPostUser() {
+            let obj = {};
+            obj.username = $("#username").val;
+            obj.password = $("#password").val;
+            obj.addresss = $("#address").val;
+
+            $.ajax("https://jsonplaceholder.typicode.com/users/", obj, {
+                success: fnAckPost,
+                type: "POST",
+                dataType: "json"
+            })
+
+        }
+
+        function fnAckPost() {
+            console.log("this function will be invoked once the data is posed successfully");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Fetching</h1>
+    <button id="getcontent">GetContent</button>
+</body>
+
+</html>

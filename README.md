@@ -3566,3 +3566,221 @@ Event handling, Mouse , Date, Arrays etc "
     - {4,6} - min 4 chars max 6 chars 
     - ? - 0 or 1 occurance 
     - [] - to give range of values 
+
+
+
+--- 
+# Day 25
+---
+
+
+
+
+T1 - RONAK, MANAV - Aakash  
+    - not much progress 
+    - have done login and registration page
+    - login, registration, cart page, 
+    - prototype is done 
+    - pending checkout page
+    - AWD - still working  
+T2 - AMIT, AAKASH - Rishab
+    - not much progress 
+    - have done login and registration page,
+    - designed menu part, still have to redirect to dashboard 
+    - 
+T3 - ASHUTOSH, RISHAB - Arjun
+    - not much progress 
+    - home, login, reg page, dashboard is designed, 
+    - prototype is done, need to add the functionality to be done 
+    - working on add to cart part 
+T4 - PANKHURI, ARJUN - Mayuresh
+ - not much progress 
+    - home, login, reg page is done but funcationlity is missing 
+    - prototyping is done 
+    - validation is pending 
+    - 
+T5 - ARTI, MAYURESH - Swati
+    - did sequence diagrm was shown well 
+    - use case done 
+    - home, login, reg page is done 
+    - add food item to the cart
+T6 - SRISHTI, HEMANTH,SWATI - Lokesh 
+    - did sequence diagrm was shown well 
+    - have done login and registration page, and tried with fetch to 
+    - to login to the system 
+    - All static pages are done 
+    - client side validation is done reg, login 
+    - add to cart to be done 
+    - its feting from rest api 
+    - hemanth + swati is working on .json file + prototyping + working on
+        cart page 
+T7 - SAJID, LOKESH - Yogesh
+    - sequence diagram shown for toy rental company 
+    - working on use case diagram 
+    - recreating the dashboard 
+    - all static pages are done 
+    - .json file is good to go 
+    - need to work on development (js)
+T8 - UTKARSH, YOGESH - Vishav /shivanand 
+    - sequence diagram shown for toy rental company 
+    - working on use case diagram 
+    - homepage, login, reg page is done with db 
+    - has some error on the fetch and working 
+    - yogesh is working on cart 
+    - utkarsh - working on login registration 
+T9 - BHAVYA, VISHAV, SHIVANAND - Manav
+    - sequence diagram shown for toy rental company  
+    - need to work on use case diagram 
+    - home, login, reg is working 
+    - validation on login/reg is working 
+    - dashboard page is done 
+    - working on checkout page 
+
+
+
+
+
+
+- design RESTfull services 
+GET 
+    - http://localhost:8080/web-app/multiplication-table?val=10
+POST 
+    - http://localhost:8080/web-app/login-validate
+
+Servlets / Jsp / Php / Python /.Net 
+-> API - Design 
+
+
+GET - you want to get 
+POST - Insert - 201 
+PUT - update 
+DELETE  - delete 
+
+
+Food Delivery System 
+
+-Register 
+POST http://localhost:3000/users
+    {
+        userid:101, 
+        username:"kumar", 
+        password:"hello"
+    }
+
+Get all Users 
+GET  http://localhost:3000/users
+    
+Get Specific User 
+GET  http://localhost:3000/users/{userId}
+Ex: GET  http://localhost:3000/users/101
+
+Store food 
+POST http://localhost:3000/food 
+    {
+        food-id:"f101", 
+        name:"pizza", 
+        cost:123
+    }
+
+// all the food in the DB 
+GET http://localhost:3000/food
+GET http://localhost:3000/food/101
+GET http://localhost:3000/food?type=indian&city=bengaluru
+
+
+
+emps:[
+    emp: {
+        empid:101, 
+        empname:"shiva"
+    },
+      emp: {
+        empid:102, 
+        empname:"sajid"
+    }
+]
+
+emps
+    emp
+        empid:101
+        empname:"shiva"
+    emp
+        empid:102
+        empname:"sajid"
+
+Presentation on Open Api Spec - 2 memberts (Akash/Lokesh)
+Presenation on Swagger doc generateion - 1 team (All) - 
+Presenation on OSWAP - 2 Members - Hemanth + Amit 
+Presenation on A, AA, AAA Standards - Arti 
+Presenation on Accessiblity - All Teams 
+Presenation on NFR - Light House, Speed, relialibity, availability - 
+                (Yogesh + Phankhuri)
+Presenation on UX - Shrishti 
+Presenation - 1 Person - final presenation - Swati 
+
+RIA -> Rich Internet Applications 
+Web Site 
+    Web App
+        Progressive Web Application  (Web + Deskop) - jQuery, ReactJS, ANGULAR, VUE etc... 
+
+
+```
+    /**
+    * @author : Naveen 
+    * @see : some code goes here 
+    */
+    public class Hello {
+        /** 
+        * @return void 
+        * @author:Naveen 
+        * /
+        public void hi() {
+            System.out.println("Hi"); 
+        }
+    }
+```
+
+
+
+emps.json 
+```
+
+emps:[
+    emp: {
+        empid:101, 
+        empname:"shiva"
+    },
+      emp: {
+        empid:102, 
+        empname:"sajid"
+    }
+]
+```
+- Security 
+    - Client - Server Authencation is needed - JWT 
+    - Client - Server Authorization 
+    - when user regisgers, he/she will enter passwrod 
+        we should not store the password as is 
+
+
+
+
+1. Library 
+    - API - jQuery, ReactJS, NestJS, Backbone js 
+    - mocha / jest 
+    - fetch / axios 
+2. Framework 
+    - comes with rules 
+    - Angular, Vue etc 
+        - to build the code 
+        - test endgine 
+        - invoke some end point then they provide 
+        - 
+
+- for invoking end point 
+    - fetch 
+    - axios 
+    - jQuery ($.ajax)
+    - https 
+            - behind the screen its called as ajax 
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../external-lib/jQuery-3-dev.js"></script>
+
+    <script type="text/javascript">
+        // window.addEventListener("load", (evt) => {
+        //     let element = document.querySelector("#content");
+        //     let para = document.createElement("p");
+        //     let textContent = document.createTextNode("Hello i'm from JavaScript");
+        //     para.appendChild(textContent);
+        //     element.appendChild(para);
+        // })
+
+        $("document").ready(() => {
+            $("#content").append("<p>This para is from jQuery</p>");
+        })
+
+    </script>
+</head>
+
+<body>
+    <h1>This is sample Header</h1>
+    <div id="content"></div>
+</body>
+
+</html>
