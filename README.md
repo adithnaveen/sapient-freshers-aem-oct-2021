@@ -3709,7 +3709,7 @@ emps
         empname:"sajid"
 
 Presentation on Open Api Spec - 2 memberts (Akash/Lokesh)
-Presenation on Swagger doc generateion - 1 team (All) - 
+Presenation on Swagger doc generateion - 1 team (All) 
 Presenation on OSWAP - 2 Members - Hemanth + Amit 
 Presenation on A, AA, AAA Standards - Arti 
 Presenation on Accessiblity - All Teams 
